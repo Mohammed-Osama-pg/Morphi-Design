@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "centurygothic";
+  src: url(../fonts/centurygothic.ttf) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "centurygothic";
+  src: url(../fonts/centurygothic_bold.ttf) format("woff");
+  font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bauhaus";
+  src: url(../fonts/BauhausRegular.ttf) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bauhaus";
+  src: url(../fonts/BauhausBold.ttf) format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bauhaus {
+  font-family: bauhaus;
+}
+.bauhaus_b {
+  font-family: bauhaus;
+  font-weight: bold;
+}
+.centurygothic {
+  font-family: centurygothic;
+}
+.centurygothic_b {
+  font-family: centurygothic;
+  font-weight: bold;
+}
