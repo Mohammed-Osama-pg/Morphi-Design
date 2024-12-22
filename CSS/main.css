@@ -10,6 +10,9 @@
   /* *Background colors */
   --main-background-color: #f8f2ed;
   --second-background-color: hsla(239, 34%, 27%, 0.5);
+
+  /* *-------------- Transtion ------------ */
+  --main-transtion: 0.7s ease-in-out;
 }
 /* !------------------------End Valuable rules--------------------- */
 
@@ -90,10 +93,6 @@ p {
 /* !-------------------------- End Global Rules------------------- */
 
 /* !-------------------------- Start header -----------------------*/
-.header .btn,
-.header .overlay {
-  display: none;
-}
 .header {
   position: absolute;
   top: 0;
@@ -111,26 +110,41 @@ p {
   display: block;
   height: 50px;
 }
+.header .btn {
+  position: fixed;
+  bottom: 15vh;
+  right: 20vw;
+  z-index: 6;
+  height: fit-content;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+}
 .nav-open-btn {
-  color: var(--seconder-color);
   font-size: 2.6rem;
 }
-.nav-open-btn.active .menu-icon,
+.nav-open-btn .menu-icon {
+  color: var(--seconder-color);
+  transition: var(--main-transtion);
+}
 .nav-open-btn .close-icon {
-  display: none;
+  position: relative;
+  z-index: 5;
+  color: var(--main-background-color);
+  transition: var(--main-transtion);
 }
 .nav-open-btn.active .menu-icon,
 .nav-open-btn .close-icon {
   display: none;
-  transition: var(--main-transtion);
 }
 .nav-open-btn .menu-icon,
 .nav-open-btn.active .close-icon {
   display: block;
 }
-.nav-open-btn.active .close-icon {
-  color: var(--main-background-color);
-}
+
 .navbar {
   position: absolute;
   top: 0;
@@ -148,18 +162,34 @@ p {
   transition: var(--main-transtion);
   z-index: 1;
 }
-.navbar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: calc(100% - 2px);
-  width: calc(100% + 2px);
-  height: 100%;
-  background-color: var(--second-background-color);
-}
 .navbar.active {
   opacity: 1;
   visibility: visible;
   transform: translatex(0);
+}
+.navbar .navbar-list > li {
+  font-family: "bauhaus";
+  font-size: 1.3rem;
+  margin-top: 20px;
+  transition: var(--main-transtion);
+}
+.navbar .navbar-list > li:hover {
+  font-weight: bold;
+  color: #ffc215;
+}
+.header .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--second-background-color);
+  transition: var(--main-transtion);
+  opacity: 0;
+  pointer-events: none;
+}
+.header .overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 /* !-------------------------- End header -----------------------*/
