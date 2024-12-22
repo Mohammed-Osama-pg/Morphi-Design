@@ -1,3 +1,18 @@
+/* !------------------------Start Valuable rules--------------------- */
+:root {
+  /* *--------------colors------------ */
+  --main-color: #ffc215;
+  --seconder-color: #2e2f5e;
+  /* *Text colors */
+  --main-text-color: #2e2f5e;
+  --second-text-color: #fff;
+  /* *Background colors */
+  --main-background-color: #f8f2ed;
+  --second-background-color: hsla(239, 34%, 27%, 0.5);
+}
+/* !------------------------End Valuable rules--------------------- */
+
+/* !--------------------------Start Fonts---------------------------- */
 @font-face {
   font-family: "centurygothic";
   src: url(../fonts/centurygothic.ttf) format("woff");
@@ -22,18 +37,4 @@
   font-weight: bold;
   font-style: italic;
 }
-
-.bauhaus {
-  font-family: bauhaus;
-}
-.bauhaus_b {
-  font-family: bauhaus;
-  font-weight: bold;
-}
-.centurygothic {
-  font-family: centurygothic;
-}
-.centurygothic_b {
-  font-family: centurygothic;
-  font-weight: bold;
-}
+/* !--------------------------End Fonts---------------------------- */
