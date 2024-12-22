@@ -5,7 +5,8 @@
   --seconder-color: #2e2f5e;
   /* *Text colors */
   --main-text-color: #2e2f5e;
-  --second-text-color: #fff;
+  --second-text-color: #1e1e1e;
+  --third-text-color: #fff;
   /* *Background colors */
   --main-background-color: #f8f2ed;
   --second-background-color: hsla(239, 34%, 27%, 0.5);
@@ -38,3 +39,43 @@
   font-style: italic;
 }
 /* !--------------------------End Fonts---------------------------- */
+/* !--------------------------Start Global Rules------------------- */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+html {
+  font-family: "centurygothic";
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--main-background-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-text-color);
+}
+p {
+  color: var(--second-text-color);
+}
+/* !--------------------------End Global Rules------------------- */
