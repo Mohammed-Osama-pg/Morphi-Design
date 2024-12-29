@@ -25,14 +25,16 @@ const toggleNavbar = function () {
   document.body.classList.toggle("nav-active");
 };
 addEventOnElement([navbarToggleBtn, overlay], "click", toggleNavbar);
+
 /**
  * services carousel movement
  */
 // ? call elements
 let services = Array.from(document.querySelectorAll("[data-service]"));
-const servPoints = document.querySelectorAll("[data-index]");
+const carousel = document.querySelector(".carousel");
 const nextBtn = document.querySelector("#next-serv");
 const previousBtn = document.querySelector("#pre-serv");
+console.log(carousel);
 // create numbers data
 let conte = 1;
 let length = services.length;
@@ -52,7 +54,6 @@ for (let i = 1; i < length + 1; i++) {
 }
 let liElement = document.querySelectorAll("#ul-id li");
 check();
-console.log(liElement);
 //Button Event
 nextBtn.onclick = next;
 previousBtn.onclick = prev;
@@ -63,13 +64,23 @@ liElement.forEach((li) => {
   });
 });
 
+const intervalId = () => {
+  intervalId = setInterval(() => {
+    if (conte >= 4) {
+      let conte = 1;
+    } else {
+      ++conte;
+    }
+    check();
+  }, 4000);
+};
+intervalId();
+
 // Create Function :
 function check() {
   services.forEach((serv) => {
-    if (serv.className == "active") {
+    if (serv.className == "service-slide active") {
       serv.className = "service-slide";
-    } else {
-      serv.className = "service-slide active";
     }
   });
   liElement.forEach((li) => {
@@ -80,8 +91,22 @@ function check() {
   });
   services[conte - 1].classList = "service-slide active";
   btnCheck();
+  rotate();
 }
-
+function rotate() {
+  if (conte === 1) {
+    carousel.style.transform = `rotate(0deg)`;
+  } else if (conte === 2) {
+    carousel.style.transform = `rotate(-${--conte * 90}deg)`;
+    ++conte;
+  } else if (conte === 3) {
+    carousel.style.transform = `rotate(-${--conte * 90}deg)`;
+    ++conte;
+  } else {
+    carousel.style.transform = `rotate(-${--conte * 90}deg)`;
+    ++conte;
+  }
+}
 function btnCheck() {
   if (conte === length) {
     nextBtn.style.cursor = "not-allowed";
