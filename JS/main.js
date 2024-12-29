@@ -1,12 +1,12 @@
 "use strict";
-/**
- * add event on mutilple elements
- */
 
-const addEventOnElement = function (element, eventType, callback) {
-  for (let i = 0, len = element.length; i < len; i++) {
-    element[i].addEventListener(eventType, callback);
-  }
+/**
+ * Add event on multiple elements
+ */
+const addEventOnElement = function (elements, eventType, callback) {
+  elements.forEach((element) => {
+    element.addEventListener(eventType, callback);
+  });
 };
 
 /**
@@ -15,125 +15,111 @@ const addEventOnElement = function (element, eventType, callback) {
 const navbar = document.querySelector("[data-navbar]");
 const navbarToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const overlay = document.querySelector("[data-overlay]");
-const contectBtn = document.querySelector("[data-contact]");
+const contactBtn = document.querySelector("[data-contact]");
 
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   navbarToggleBtn.classList.toggle("active");
   overlay.classList.toggle("active");
-  contectBtn.classList.toggle("active");
+  contactBtn.classList.toggle("active");
   document.body.classList.toggle("nav-active");
 };
+
 addEventOnElement([navbarToggleBtn, overlay], "click", toggleNavbar);
 
 /**
- * services carousel movement
+ * Services carousel movement
  */
-// ? call elements
-let services = Array.from(document.querySelectorAll("[data-service]"));
+const services = Array.from(document.querySelectorAll("[data-service]"));
 const carousel = document.querySelector(".carousel");
 const nextBtn = document.querySelector("#next-serv");
 const previousBtn = document.querySelector("#pre-serv");
-console.log(carousel);
-// create numbers data
+const length = services.length;
+
 let conte = 1;
-let length = services.length;
-// create auto ul
-let ul = document.createElement("ul");
+
+// Create pagination (ul and li elements)
+const ul = document.createElement("ul");
 ul.setAttribute("id", "ul-id");
 nextBtn.before(ul);
-// create li elements
-for (let i = 1; i < length + 1; i++) {
-  let li = document.createElement("li");
+
+for (let i = 1; i <= length; i++) {
+  const li = document.createElement("li");
   li.setAttribute("data-index", i);
   li.classList.add("point");
   if (conte === i) {
-    li.classList = "point active";
+    li.classList.add("active");
   }
   ul.appendChild(li);
 }
-let liElement = document.querySelectorAll("#ul-id li");
-check();
-//Button Event
-nextBtn.onclick = next;
-previousBtn.onclick = prev;
-liElement.forEach((li) => {
+
+const liElements = document.querySelectorAll("#ul-id li");
+
+liElements.forEach((li) => {
   li.addEventListener("click", () => {
     conte = +li.dataset.index;
     check();
   });
 });
 
-const intervalId = () => {
-  intervalId = setInterval(() => {
-    if (conte >= 4) {
-      let conte = 1;
-    } else {
-      ++conte;
-    }
-    check();
-  }, 4000);
-};
-intervalId();
+// Set up auto-rotation with an interval
+let intervalId = setInterval(() => {
+  if (conte >= length) {
+    conte = 1;
+  } else {
+    conte++;
+  }
+  check();
+}, 4000);
 
-// Create Function :
 function check() {
-  services.forEach((serv) => {
-    if (serv.className == "service-slide active") {
-      serv.className = "service-slide";
-    }
+  // Update service slides
+  services.forEach((service, index) => {
+    service.classList.toggle("active", index + 1 === conte);
   });
-  liElement.forEach((li) => {
-    li.classList = "point";
-    if (li.dataset.index == conte) {
-      li.classList = "point active";
-    }
+
+  // Update pagination points
+  liElements.forEach((li) => {
+    li.classList.toggle("active", +li.dataset.index === conte);
   });
-  services[conte - 1].classList = "service-slide active";
-  btnCheck();
+
+  // Rotate carousel
   rotate();
+
+  // Update button states
+  btnCheck();
 }
+
 function rotate() {
-  if (conte === 1) {
-    carousel.style.transform = `rotate(0deg)`;
-  } else if (conte === 2) {
-    carousel.style.transform = `rotate(-${--conte * 90}deg)`;
-    ++conte;
-  } else if (conte === 3) {
-    carousel.style.transform = `rotate(-${--conte * 90}deg)`;
-    ++conte;
-  } else {
-    carousel.style.transform = `rotate(-${--conte * 90}deg)`;
-    ++conte;
-  }
+  const rotation = -(conte - 1) * 90;
+  carousel.style.transform = `rotate(${rotation}deg)`;
 }
+
 function btnCheck() {
-  if (conte === length) {
-    nextBtn.style.cursor = "not-allowed";
-    nextBtn.style.opacity = ".4";
-  } else {
-    nextBtn.style.cursor = "pointer";
-    nextBtn.style.opacity = "1";
-  }
-  if (conte === 1) {
-    previousBtn.style.cursor = "not-allowed";
-    previousBtn.style.opacity = ".4";
-  } else {
-    previousBtn.style.cursor = "pointer";
-    previousBtn.style.opacity = "1";
-  }
+  nextBtn.style.cursor = conte === length ? "not-allowed" : "pointer";
+  nextBtn.style.opacity = conte === length ? "0.4" : "1";
+
+  previousBtn.style.cursor = conte === 1 ? "not-allowed" : "pointer";
+  previousBtn.style.opacity = conte === 1 ? "0.4" : "1";
 }
+
 function next() {
   if (conte < length) {
     conte++;
+    check();
   }
-  console.log(conte);
-  check();
 }
+
 function prev() {
-  if (1 < conte) {
+  if (conte > 1) {
     conte--;
+    check();
   }
-  console.log(conte);
-  check();
 }
+
+// Attach button event listeners
+nextBtn.addEventListener("click", next);
+previousBtn.addEventListener("click", prev);
+
+// Initialize the carousel
+check();
