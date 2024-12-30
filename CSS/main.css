@@ -296,7 +296,8 @@ main .hero .scroall {
 /* !-------------------------- Start Services section -----------------------*/
 .services {
   background-image: url(../Imgs/services-background.png);
-  background-size: contain;
+  background-size: cover;
+  max-height: 100vw;
 }
 .services .container {
   height: calc(100% - 86px);
