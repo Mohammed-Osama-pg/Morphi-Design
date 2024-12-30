@@ -413,3 +413,45 @@ main .hero .scroall {
   border: 3px solid var(--main-color);
 }
 /* !-------------------------- End Services section -----------------------*/
+
+/* !-------------------------- Start Footer section -----------------------*/
+footer .container {
+  padding-block: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+  color: var(--secondry-background-color);
+  position: relative;
+  z-index: 4;
+}
+footer .container .logo {
+  max-width: 200px;
+  margin: 20px 0;
+}
+footer .container li a {
+  font-family: "bauhaus";
+  padding: 20px 0;
+  font-size: 14px;
+}
+footer .container ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 2px solid var(--secondry-background-color);
+}
+footer .social-icons {
+  color: var(--seconder-color);
+}
+footer .container i {
+  padding: 16px;
+  font-size: 20px;
+}
+footer .container .line {
+  width: 80%;
+  height: 5px;
+  background-color: var(--seconder-color);
+  border-radius: 3px;
+}
+/* !-------------------------- End Footer section ----------------------- */
