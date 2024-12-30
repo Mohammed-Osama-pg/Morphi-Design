@@ -16,6 +16,9 @@ const navbar = document.querySelector("[data-navbar]");
 const navbarToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const overlay = document.querySelector("[data-overlay]");
 const contactBtn = document.querySelector("[data-contact]");
+const navbarList = document.querySelector(".navbar-list");
+console.log(navbarList);
+console.log(overlay);
 
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
@@ -25,7 +28,11 @@ const toggleNavbar = function () {
   document.body.classList.toggle("nav-active");
 };
 
-addEventOnElement([navbarToggleBtn, overlay], "click", toggleNavbar);
+addEventOnElement(
+  [navbarToggleBtn, overlay, navbarList],
+  "click",
+  toggleNavbar
+);
 
 /**
  * Services carousel movement
@@ -35,7 +42,7 @@ const carousel = document.querySelector(".carousel");
 const nextBtn = document.querySelector("#next-serv");
 const previousBtn = document.querySelector("#pre-serv");
 const length = services.length;
-
+const imgSilder = document.querySelectorAll(".imge-container img");
 let conte = 1;
 
 // Create pagination (ul and li elements)
@@ -76,6 +83,10 @@ function check() {
   // Update service slides
   services.forEach((service, index) => {
     service.classList.toggle("active", index + 1 === conte);
+  });
+  // Update imgs slides
+  imgSilder.forEach((img, index) => {
+    img.classList.toggle("active", index + 1 === conte);
   });
 
   // Update pagination points

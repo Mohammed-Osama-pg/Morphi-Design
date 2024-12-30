@@ -270,6 +270,10 @@ main .hero .scroall {
 }
 /* !-------------------------- End Hero Section -----------------------*/
 /* !-------------------------- Start Services section -----------------------*/
+.services {
+  background-image: url(../Imgs/services-background.png);
+  background-size: contain;
+}
 .section-title {
   padding-top: 20px;
   font-size: 55px;
@@ -296,8 +300,36 @@ main .hero .scroall {
   position: relative;
   left: -60%;
 }
-.services .carousel.active {
-  transform: rotate(-90deg);
+.imge-container {
+  position: absolute;
+  overflow: hidden;
+  width: 97%;
+  height: 97%;
+  border-radius: 50%;
+}
+.imge-container img {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--main-transtion);
+}
+.imge-container img.active {
+  opacity: 1;
+}
+.imge-container img:nth-child(1) {
+  transform: rotate(0);
+}
+.imge-container img:nth-child(2) {
+  transform: rotate(90deg);
+}
+.imge-container img:nth-child(3) {
+  transform: rotate(-180deg);
+}
+.imge-container img:nth-child(4) {
+  transform: rotate(270deg);
 }
 .services .carousel .service-slide {
   max-width: 160px;
@@ -376,12 +408,8 @@ main .hero .scroall {
   transition: var(--main-transtion);
   cursor: pointer;
 }
-
 .control-points .point.active {
   transform: scale(1.5);
   border: 3px solid var(--main-color);
 }
 /* !-------------------------- End Services section -----------------------*/
-.hide {
-  display: none;
-}
