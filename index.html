@@ -21,71 +21,88 @@
   </head>
   <body>
     <!-- *------------------ Start the header -------------------- -->
-    <header class="header">
-      <div class="container">
-        <a href="#" class="logo">
-          <img src="Imgs/Logo.svg" alt="Morphi Design home" />
-        </a>
-        <nav class="navbar" data-navbar="">
-          <ul class="navbar-list">
-            <li><a href="#" class="navbar-link">About Us</a></li>
-            <li><a href="#services" class="navbar-link">Services</a></li>
-            <li><a href="#" class="navbar-link">Portfolio</a></li>
-            <li><a href="#" class="navbar-link">Pricing</a></li>
-            <li><a href="#" class="navbar-link">Our News</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="btn btn-primary" data-contact="">contact us</a>
-        <button
-          class="nav-open-btn"
-          aria-level="toggle menu"
-          data-nav-toggle-btn=""
-        >
-          <ion-icon
-            name="grid-outline"
-            aria-hidden="true"
-            class="menu-icon"
-          ></ion-icon>
-          <ion-icon
-            name="close-circle-outline"
-            aria-hidden="true"
-            class="close-icon"
-          ></ion-icon>
-        </button>
-        <div class="overlay" data-overlay=""></div>
-      </div>
-    </header>
-    <!-- *------------------ End the header -------------------- -->
-    <!-- *------------------ Start Hero section -------------------- -->
-    <main>
-      <article>
-        <section class="hero" aria-label="hero">
-          <div class="container">
-            <div class="hero-bannar">
-              <div class="hero-img">
-                <img src="Imgs/Hero-bannar.svg" alt="Morphi Design" />
-              </div>
-              <button class="btn-secondery">Who We are</button>
-              <div class="hero-content">
-                <h1>
-                  elevate your <br />
-                  architectural presencea <br />
-                  with us
-                </h1>
+    <div class="background-1">
+      <header class="header">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="Imgs/Logo.svg" alt="Morphi Design home" />
+          </a>
+          <nav class="navbar" data-navbar="">
+            <ul class="navbar-list">
+              <li><a href="#" class="navbar-link">About Us</a></li>
+              <li><a href="#services" class="navbar-link">Services</a></li>
+              <li><a href="#" class="navbar-link">Portfolio</a></li>
+              <li><a href="#" class="navbar-link">Pricing</a></li>
+              <li><a href="#" class="navbar-link">Our News</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="btn btn-primary" data-contact="">contact us</a>
+          <button
+            class="nav-open-btn"
+            aria-level="toggle menu"
+            data-nav-toggle-btn=""
+          >
+            <ion-icon
+              name="grid-outline"
+              aria-hidden="true"
+              class="menu-icon"
+            ></ion-icon>
+            <ion-icon
+              name="close-circle-outline"
+              aria-hidden="true"
+              class="close-icon"
+            ></ion-icon>
+          </button>
+          <div class="overlay" data-overlay=""></div>
+        </div>
+      </header>
+      <!-- *------------------ End the header -------------------- -->
+      <!-- *------------------ Start Hero section -------------------- -->
+      <main>
+        <article>
+          <section class="hero" aria-label="hero">
+            <div class="container">
+              <div class="hero-bannar">
+                <div class="hero-img">
+                  <img src="Imgs/Hero-bannar.svg" alt="Morphi Design" />
+                </div>
+                <button class="btn-primary">Who We are</button>
+                <div class="hero-content">
+                  <h1>
+                    elevate your <br />
+                    architectural presencea <br />
+                    with us
+                  </h1>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="scroall">
-            <a href="#" class="scroall-text">scroll down for more info</a>
-            <ion-icon
-              name="chevron-down-outline"
-              class="scroall-arrow"
-            ></ion-icon>
-          </div>
-        </section>
-      </article>
-    </main>
-    <!-- *------------------ End Hero section -------------------- -->
+            <div class="scroall">
+              <a href="#" class="scroall-text">scroll down for more info</a>
+              <ion-icon
+                name="chevron-down-outline"
+                class="scroall-arrow"
+              ></ion-icon>
+            </div>
+          </section>
+        </article>
+      </main>
+      <!-- *------------------ End Hero section -------------------- -->
+      <!-- *------------------ Start About us -------------------- -->
+      <section class="about-us">
+        <h2 class="section-title">About <span>morphi</span></h2>
+
+        <div class="container">
+          <h3>Morph Your Vision with Murphy Design!</h3>
+          <p>
+            We turn your architectural creativity into powerful marketing tools
+            with sleek portfolios, stunning visualizations, and custom websites
+            to elevate your digital presence. Let’s shape your ideas into a
+            brand that matches your ambition!
+          </p>
+        </div>
+      </section>
+    </div>
+    <!-- *------------------ End About us -------------------- -->
     <!-- *------------------ Start Services section -------------------- -->
     <section class="services" id="services">
       <h2 class="section-title">our <span>services</span></h2>
@@ -140,76 +157,77 @@
       </div>
     </section>
     <!-- *------------------ End Services section -------------------- -->
-    <!-- Start Contact Us section -->
-
-    <section class="contact-us">
-      <h2 class="section-title">lets <span>contact</span></h2>
-      <div class="container">
-        <div class="main-heading">
-          <h2>Have a project?</h2>
-          <p>
-            tell us about your vision ? which challenges are you facing ? what
-            are your goals and expectations ? what would success look like and
-            how much you are planning to spend to get them ?
-          </p>
-        </div>
-        <div class="line"></div>
-        <div class="contact">
-          <form action="">
-            <input
-              class="main-inpt"
-              type="name"
-              name="Clin-name"
-              placeholder="YOUR NAME"
-            />
-            <input
-              class="main-inpt"
-              type="email"
-              name="Clin-name"
-              placeholder="YOUR EMAIL"
-            />
-            <textarea
-              class="main-inpt"
-              name="massage"
-              placeholder="YOUR MASSAGE"
-            ></textarea>
-            <input type="submit" class="btn-primary" value="SEND MESSAGE" />
-          </form>
-          <div class="info">
-            <div class="get-tach">
-              <h3>Contact us</h3>
-              <p>
-                feel free to contact us and we will get back to you as soon as
-                possibl
-              </p>
+    <!-- *------------------ Start Contact Us section ------------------ -->
+    <div class="background-2">
+      <section class="contact-us">
+        <h2 class="section-title">lets <span>contact</span></h2>
+        <div class="container">
+          <div class="main-heading">
+            <h2>Have a project?</h2>
+            <p>
+              tell us about your vision ? which challenges are you facing ? what
+              are your goals and expectations ? what would success look like and
+              how much you are planning to spend to get them ?
+            </p>
+          </div>
+          <div class="line"></div>
+          <div class="contact">
+            <form action="">
+              <input
+                class="main-inpt"
+                type="name"
+                name="Clin-name"
+                placeholder="YOUR NAME"
+              />
+              <input
+                class="main-inpt"
+                type="email"
+                name="Clin-name"
+                placeholder="YOUR EMAIL"
+              />
+              <textarea
+                class="main-inpt"
+                name="massage"
+                placeholder="YOUR MASSAGE"
+              ></textarea>
+              <input type="submit" class="btn-secondery" value="SEND MESSAGE" />
+            </form>
+            <div class="info">
+              <div class="get-tach">
+                <h3>Contact us</h3>
+                <p>
+                  feel free to contact us and we will get back to you as soon as
+                  possibl
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End Contact Us section -->
-    <!-- *------------------ Start Footer section -------------------- -->
-    <footer>
-      <div class="container">
-        <img src="Imgs/Logo.svg" alt="" class="logo" />
-        <ul class="links-list">
-          <li><a href="#" class="footer-link">About Us</a></li>
-          <li><a href="#services" class="footer-link">Services</a></li>
-          <li><a href="#" class="footer-link">Portfolio</a></li>
-          <li><a href="#" class="footer-link">Pricing</a></li>
-          <li><a href="#" class="footer-link">Our News</a></li>
-        </ul>
-        <ul class="social-icons">
-          <li><ion-icon name="logo-facebook"></ion-icon></li>
-          <li><ion-icon name="logo-twitter"></ion-icon></li>
-          <li><ion-icon name="logo-instagram"></ion-icon></li>
-          <li><ion-icon name="logo-linkedin"></ion-icon></li>
-          <li><ion-icon name="logo-pinterest"></ion-icon></li>
-          <li><ion-icon name="logo-behance"></ion-icon></li>
-        </ul>
-        <div class="line"></div>
-      </div>
-    </footer>
+      </section>
+      <!-- End Contact Us section -->
+      <!-- *------------------ Start Footer section -------------------- -->
+      <footer>
+        <div class="container">
+          <img src="Imgs/Logo.svg" alt="" class="logo" />
+          <ul class="links-list">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#" class="footer-link">Portfolio</a></li>
+            <li><a href="#" class="footer-link">Pricing</a></li>
+            <li><a href="#" class="footer-link">Our News</a></li>
+          </ul>
+          <ul class="social-icons">
+            <li><ion-icon name="logo-facebook"></ion-icon></li>
+            <li><ion-icon name="logo-twitter"></ion-icon></li>
+            <li><ion-icon name="logo-instagram"></ion-icon></li>
+            <li><ion-icon name="logo-linkedin"></ion-icon></li>
+            <li><ion-icon name="logo-pinterest"></ion-icon></li>
+            <li><ion-icon name="logo-behance"></ion-icon></li>
+          </ul>
+          <div class="line"></div>
+        </div>
+      </footer>
+    </div>
     <!-- *------------------End Footer section -------------------- -->
     <!-- !javascript file -->
     <script src="JS/main.js"></script>
