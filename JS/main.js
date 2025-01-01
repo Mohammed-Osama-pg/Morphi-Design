@@ -65,6 +65,7 @@ const liElements = document.querySelectorAll("#ul-id li");
 liElements.forEach((li) => {
   li.addEventListener("click", () => {
     conte = +li.dataset.index;
+    stopAutoRotation();
     check();
   });
 });
@@ -77,7 +78,13 @@ let intervalId = setInterval(() => {
     conte++;
   }
   check();
-}, 4000);
+}, 5000);
+
+//  Stop auto-rotation
+
+function stopAutoRotation() {
+  clearInterval(intervalId);
+}
 
 function check() {
   // Update service slides
@@ -118,6 +125,7 @@ function next() {
   if (conte < length) {
     conte++;
     check();
+    intervalId(clearInterval());
   }
 }
 
@@ -129,8 +137,15 @@ function prev() {
 }
 
 // Attach button event listeners
-nextBtn.addEventListener("click", next);
-previousBtn.addEventListener("click", prev);
+nextBtn.addEventListener("click", () => {
+  next();
+  stopAutoRotation();
+});
+
+previousBtn.addEventListener("click", () => {
+  prev();
+  stopAutoRotation();
+});
 
 // Initialize the carousel
 check();
