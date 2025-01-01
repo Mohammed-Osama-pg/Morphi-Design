@@ -292,6 +292,9 @@ main .hero .scroall {
   margin-bottom: 18px;
   font-size: 26px;
 }
+.about-us .container h3 span {
+  color: var(--main-color);
+}
 /* !-------------------------- End AboutUs section -----------------------*/
 /* !-------------------------- Start Services section -----------------------*/
 .services {
