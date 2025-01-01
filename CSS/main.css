@@ -280,7 +280,7 @@ main .hero .scroall {
 /* !-------------------------- End Hero Section -----------------------*/
 /* !-------------------------- Start AboutUs section -----------------------*/
 .about-us {
-  height: 50vh;
+  height: 360px;
   background-color: var(--second-background-color);
 }
 .about-us .container {
@@ -294,6 +294,9 @@ main .hero .scroall {
 }
 .about-us .container h3 span {
   color: var(--main-color);
+}
+.about-us .container p {
+  color: var(--third-text-color);
 }
 /* !-------------------------- End AboutUs section -----------------------*/
 /* !-------------------------- Start Services section -----------------------*/
