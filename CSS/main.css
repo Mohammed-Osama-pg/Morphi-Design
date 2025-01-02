@@ -128,6 +128,22 @@ section {
   border: 2px solid var(--seconder-color);
   border-radius: 5px;
 }
+.btn-third {
+  font-size: 1.1rem;
+  font-family: "bauhaus";
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  transition: var(--main-transtion);
+}
+.btn-third:hover {
+  background-color: var(--second-background-color);
+}
+.btn-third.active {
+  background-color: var(--main-color);
+}
+
 /* !-------------------------- End Global Rules------------------- */
 
 /* !-------------------------- Start header -----------------------*/
@@ -436,7 +452,18 @@ main .hero .scroall {
   border: 3px solid var(--main-color);
 }
 /* !-------------------------- End Services section -----------------------*/
-/*  Start Contact Us section */
+/* !-------------------------- Start Portfolio section -----------------------*/
+.portfolio .btn-holder {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* !-------------------------- End Portfolio section -----------------------*/
+/* !-------------------------- Start Contact Us section -----------------------*/
 .background-2 {
   background-image: url(../Imgs/services-background.png);
 }
@@ -518,7 +545,7 @@ main .hero .scroall {
 .contact-us .contact .info .get-tach {
   text-align: center;
 }
-/*  End Contact Us section */
+/* !-------------------------- End Contact Us section -----------------------*/
 /* !-------------------------- Start Footer section -----------------------*/
 footer .container {
   padding-block: 20px;
