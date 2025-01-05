@@ -17,8 +17,6 @@ const navbarToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const overlay = document.querySelector("[data-overlay]");
 const contactBtn = document.querySelector("[data-contact]");
 const navbarList = document.querySelector(".navbar-list");
-console.log(navbarList);
-console.log(overlay);
 
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
