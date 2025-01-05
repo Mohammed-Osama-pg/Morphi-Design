@@ -123,7 +123,6 @@ function next() {
   if (conte < length) {
     conte++;
     check();
-    intervalId(clearInterval());
   }
 }
 
