@@ -129,6 +129,7 @@ section {
   border-radius: 5px;
 }
 .btn-third {
+  background-color: var(--main-background-color);
   font-size: 1.1rem;
   font-family: "bauhaus";
   font-weight: bold;
@@ -139,6 +140,7 @@ section {
 }
 .btn-third:hover {
   background-color: var(--second-background-color);
+  color: var(--third-text-color);
 }
 .btn-third.active {
   background-color: var(--main-color);
@@ -453,8 +455,20 @@ main .hero .scroall {
 }
 /* !-------------------------- End Services section -----------------------*/
 /* !-------------------------- Start Portfolio section -----------------------*/
+.portfolio {
+  height: fit-content;
+  padding-bottom: 20px;
+  background-color: var(--second-background-color);
+}
+.portfolio .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
 .portfolio .btn-holder {
-  margin-top: 15px;
+  padding: 15px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -462,6 +476,22 @@ main .hero .scroall {
   align-items: center;
   gap: 10px;
 }
+.portfolio .imgs-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+.portfolio .imgs-holder .port-card {
+  background-color: var(--main-background-color);
+  padding: 5px;
+  border: 3px solid var(--seconder-color);
+  border-radius: 20px;
+}
+.portfolio .imgs-holder .port-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
 /* !-------------------------- End Portfolio section -----------------------*/
 /* !-------------------------- Start Contact Us section -----------------------*/
 .background-2 {
