@@ -487,6 +487,9 @@ main .hero .scroall {
   border: 3px solid var(--seconder-color);
   border-radius: 20px;
 }
+.portfolio .imgs-holder .port-card.hiden {
+  display: none;
+}
 .portfolio .imgs-holder .port-card img {
   width: 100%;
   border-radius: 20px;
