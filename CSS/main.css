@@ -49,6 +49,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  user-select: none;
 }
 *:focus {
   outline: none;
@@ -501,10 +502,10 @@ main .hero .scroall {
   transform: translateY(-50%);
 }
 .portfolio .wrapper ion-icon:first-child {
-  left: -36px;
+  left: -5vw;
 }
 .portfolio .wrapper ion-icon:last-child {
-  right: -36px;
+  right: -5vw;
 }
 .portfolio .wrapper .imgs-holder {
   display: grid;
@@ -512,7 +513,16 @@ main .hero .scroall {
   grid-auto-columns: calc((100% / 3) - 12px);
   justify-items: center;
   gap: 16px;
+  cursor: pointer;
   overflow: hidden;
+  scroll-behavior: smooth;
+}
+.portfolio .wrapper .imgs-holder.dragging {
+  scroll-behavior: auto;
+}
+.portfolio .wrapper .imgs-holder.dragging .port-card {
+  cursor: grab;
+  user-select: none;
 }
 .portfolio .imgs-holder .port-card {
   background-color: var(--main-background-color);
