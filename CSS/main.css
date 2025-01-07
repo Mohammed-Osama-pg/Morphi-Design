@@ -514,10 +514,16 @@ main .hero .scroall {
   justify-items: center;
   gap: 16px;
   cursor: pointer;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
   scroll-behavior: smooth;
 }
+.portfolio .wrapper .imgs-holder::-webkit-scrollbar {
+  display: none;
+}
 .portfolio .wrapper .imgs-holder.dragging {
+  scroll-snap-type: none;
   scroll-behavior: auto;
 }
 .portfolio .wrapper .imgs-holder.dragging .port-card {
@@ -525,6 +531,9 @@ main .hero .scroall {
   user-select: none;
 }
 .portfolio .imgs-holder .port-card {
+  transition: var(--main-transtion);
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
   background-color: var(--main-background-color);
   padding: 5px;
   border: 3px solid var(--seconder-color);
