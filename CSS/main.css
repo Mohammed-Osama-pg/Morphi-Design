@@ -485,6 +485,23 @@ main .hero .scroall {
   max-width: 1100px;
   width: 100%;
 }
+.portfolio .wrapper ion-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  color: var(--seconder-color);
+  cursor: pointer;
+  position: absolute;
+}
+.portfolio .wrapper ion-icon:first {
+  left: -22px;
+}
+.portfolio .wrapper ion-icon:last-child {
+  right: -22px;
+}
+
 .portfolio .wrapper .imgs-holder {
   display: grid;
   grid-auto-flow: column;
