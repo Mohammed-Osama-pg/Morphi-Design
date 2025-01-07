@@ -519,6 +519,9 @@ main .hero .scroall {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
+.portfolio .wrapper .imgs-holder.no-animation {
+  scroll-behavior: auto;
+}
 .portfolio .wrapper .imgs-holder::-webkit-scrollbar {
   display: none;
 }
@@ -538,7 +541,6 @@ main .hero .scroall {
   padding: 5px;
   border: 3px solid var(--seconder-color);
   border-radius: 20px;
-  max-width: 80vw;
 }
 .portfolio .imgs-holder .port-card.hiden {
   display: none;
