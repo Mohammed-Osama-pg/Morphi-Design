@@ -484,6 +484,7 @@ main .hero .scroall {
 .portfolio .wrapper {
   max-width: 1100px;
   width: 100%;
+  margin-block: 19px;
   position: relative;
 }
 .portfolio .wrapper ion-icon {
@@ -493,21 +494,22 @@ main .hero .scroall {
   padding: 5px;
   text-align: center;
   color: var(--seconder-color);
+  background-color: var(--main-background-color);
   cursor: pointer;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 .portfolio .wrapper ion-icon:first-child {
-  left: -33px;
+  left: -36px;
 }
 .portfolio .wrapper ion-icon:last-child {
-  right: -33px;
+  right: -36px;
 }
 .portfolio .wrapper .imgs-holder {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 1));
+  grid-auto-columns: calc((100% / 3) - 12px);
   justify-items: center;
   gap: 16px;
   overflow: hidden;
@@ -517,7 +519,7 @@ main .hero .scroall {
   padding: 5px;
   border: 3px solid var(--seconder-color);
   border-radius: 20px;
-  max-height: 40vh;
+  max-width: 80vw;
 }
 .portfolio .imgs-holder .port-card.hiden {
   display: none;
@@ -526,7 +528,26 @@ main .hero .scroall {
   width: 100%;
   border-radius: 20px;
 }
-
+@media screen and (max-width: 900px) {
+  .portfolio .wrapper .imgs-holder {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+  .portfolio .wrapper ion-icon:first-child {
+    left: -10px;
+  }
+  .portfolio .wrapper ion-icon:last-child {
+    right: -10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .portfolio .wrapper .imgs-holder {
+    grid-auto-columns: 100%;
+  }
+  .portfolio .wrapper ion-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
 /* !-------------------------- End Portfolio section -----------------------*/
 /* !-------------------------- Start Contact Us section -----------------------*/
 .background-2 {
