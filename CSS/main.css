@@ -672,16 +672,22 @@ footer .container .logo {
   max-width: 200px;
   margin: 20px 0;
 }
-footer .container li a {
+footer .container .links-list li a {
   font-family: "bauhaus";
   padding: 20px 0;
-  font-size: 14px;
+  font-size: 24px;
 }
 footer .container ul {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   border-top: 2px solid var(--secondry-background-color);
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 10px;
+}
+footer .container .social-icons li a {
+  font-size: 2rem;
 }
 footer .social-icons {
   color: var(--seconder-color);
