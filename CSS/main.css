@@ -331,8 +331,8 @@ main .hero .scroall {
   align-items: center;
 }
 .services .carousel {
-  height: 65vw;
-  width: 65vw;
+  height: 86vw;
+  width: 86vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,6 +372,8 @@ main .hero .scroall {
 }
 .imge-container img:nth-child(4) {
   transform: rotate(270deg);
+  object-position: -31% -17%;
+  width: 112%;
 }
 .services .carousel .service-slide {
   max-width: 160px;
@@ -430,6 +432,7 @@ main .hero .scroall {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: scale(0.7);
 }
 .control-points ion-icon {
   font-size: 2rem;
