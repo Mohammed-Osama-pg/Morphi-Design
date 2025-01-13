@@ -13,6 +13,9 @@
 
   /* *-------------- Transtion ------------ */
   --main-transtion: 0.7s ease-in-out;
+
+  /* *-------------- Padding ------------ */
+  --section-padding: 60px;
 }
 /* !------------------------End Valuable rules--------------------- */
 
@@ -577,7 +580,7 @@ main .hero .scroall {
 .background-2 {
   background-image: url(../Imgs/services-background.png);
 }
-.contact-us {
+/* .contact-us {
   background-color: var(--second-background-color);
   height: auto;
 }
@@ -654,9 +657,94 @@ main .hero .scroall {
 }
 .contact-us .contact .info .get-tach {
   text-align: center;
+} */
+/* Start Contact section */
+.contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
 }
+.contact .info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact .info .lable {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px;
+  letter-spacing: -2px;
+  color: var(--therd-text-color);
+  font-family: "bauhaus";
+}
+.contact .info .link {
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "bauhaus";
+  position: relative;
+  z-index: 5;
+  left: 80px;
+}
+.contact .info .link::before {
+  content: "";
+  display: block;
+  width: calc(100% + 30px);
+  height: 30px;
+  background-color: var(--second-background-color);
+  position: absolute;
+  bottom: -5px;
+  right: 2px;
+  z-index: -1;
+  border-radius: 10px;
+}
+.contact .info .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--main-text-color);
+  position: relative;
+  z-index: 5;
+  left: 160px;
+}
+.contact .info i {
+  margin-left: 40px;
+  color: var(--main-color);
+  background-color: var(--therd-text-color);
+  padding: 8px;
+  border-radius: 6px;
+}
+@media (max-width: 767px) {
+  .contact .info .lable,
+  .contact .info .link {
+    font-size: 25px;
+  }
+  .contact .info .link,
+  .contact .info .social {
+    left: 0;
+  }
+  .contact .info i {
+    margin-left: 10px;
+    color: var(--main-color);
+    background-color: var(--therd-text-color);
+    padding: 8px;
+    border-radius: 6px;
+  }
+}
+/* End Contact section */
 /* !-------------------------- End Contact Us section -----------------------*/
 /* !-------------------------- Start Footer section -----------------------*/
+footer {
+  background-color: var(--second-background-color);
+}
 footer .container {
   padding-block: 20px;
   display: flex;
@@ -676,6 +764,7 @@ footer .container .links-list li a {
   font-family: "bauhaus";
   padding: 20px 0;
   font-size: 24px;
+  color: var(--third-text-color);
 }
 footer .container ul {
   width: 100%;
@@ -690,7 +779,7 @@ footer .container .social-icons li a {
   font-size: 2rem;
 }
 footer .social-icons {
-  color: var(--seconder-color);
+  color: var(--main-color);
 }
 footer .container i {
   padding: 16px;
