@@ -13,9 +13,6 @@
 
   /* *-------------- Transtion ------------ */
   --main-transtion: 0.7s ease-in-out;
-
-  /* *-------------- Padding ------------ */
-  --section-padding: 60px;
 }
 /* !------------------------End Valuable rules--------------------- */
 
@@ -670,15 +667,16 @@ main .hero .scroall {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .contact .info .lable {
   font-weight: 800;
   font-size: 30px;
   margin-bottom: 30px;
-  letter-spacing: -2px;
-  color: var(--therd-text-color);
+  color: var(--seconder-color);
   font-family: "bauhaus";
+  position: relative;
+  left: -45px;
 }
 .contact .info .link {
   display: block;
@@ -729,7 +727,7 @@ main .hero .scroall {
   }
   .contact .info .link,
   .contact .info .social {
-    left: 0;
+    left: -10px;
   }
   .contact .info i {
     margin-left: 10px;
@@ -737,6 +735,9 @@ main .hero .scroall {
     background-color: var(--therd-text-color);
     padding: 8px;
     border-radius: 6px;
+  }
+  .contact .info .lable {
+    left: 0;
   }
 }
 /* End Contact section */
