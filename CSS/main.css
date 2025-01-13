@@ -681,7 +681,7 @@ main .hero .scroall {
 .contact .info .link {
   display: block;
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--main-text-color);
   font-size: 40px;
   font-weight: bold;
   font-family: "bauhaus";
@@ -693,8 +693,8 @@ main .hero .scroall {
   content: "";
   display: block;
   width: calc(100% + 30px);
-  height: 30px;
-  background-color: var(--second-background-color);
+  height: 40px;
+  background-color: var(--main-color);
   position: absolute;
   bottom: -5px;
   right: 2px;
