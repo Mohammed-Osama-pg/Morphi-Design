@@ -711,14 +711,18 @@ main .hero .scroall {
   color: var(--main-text-color);
   position: relative;
   z-index: 5;
-  left: 160px;
+  left: -45px;
 }
-.contact .info i {
-  margin-left: 40px;
+.contact .info ul li:first-child {
+  font-weight: 700;
+}
+.contact .info ion-icon {
+  margin-left: 26px;
   color: var(--main-color);
-  background-color: var(--therd-text-color);
+  background-color: var(--main-text-color);
   padding: 8px;
   border-radius: 6px;
+  font-size: 20px;
 }
 @media (max-width: 767px) {
   .contact .info .lable,
