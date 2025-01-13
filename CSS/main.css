@@ -9,7 +9,7 @@
   --third-text-color: #fff;
   /* *Background colors */
   --main-background-color: #f8f2ed;
-  --second-background-color: hsla(239, 34%, 27%, 0.5);
+  --second-background-color: #7567ae;
 
   /* *-------------- Transtion ------------ */
   --main-transtion: 0.7s ease-in-out;
@@ -541,8 +541,6 @@ main .hero .scroall {
   scroll-snap-align: start;
   scroll-behavior: smooth;
   background-color: var(--main-background-color);
-  padding: 5px;
-  border: 3px solid var(--seconder-color);
   border-radius: 20px;
 }
 .portfolio .imgs-holder .port-card.hiden {
