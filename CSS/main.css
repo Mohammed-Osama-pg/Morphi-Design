@@ -627,7 +627,7 @@ main .hero .scroall {
   background-color: var(--main-color);
   position: absolute;
   bottom: -5px;
-  right: 2px;
+  right: -13px;
   z-index: -1;
   border-radius: 10px;
 }
