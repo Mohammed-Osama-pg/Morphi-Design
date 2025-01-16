@@ -289,12 +289,15 @@ main .hero .scroall {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 200px;
+  width: 270px;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 21px;
+  text-align: center;
+  color: var(--main-text-color);
 }
 /* !-------------------------- End Hero Section -----------------------*/
 /* !-------------------------- Start AboutUs section -----------------------*/
