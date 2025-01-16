@@ -307,19 +307,25 @@ main .hero .scroall {
   background-color: var(--second-background-color);
 }
 .about-us .container {
-  margin-top: 40px;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about-us .container h3 {
   width: 100%;
   margin-bottom: 18px;
   font-size: 26px;
+  text-align: center;
 }
 .about-us .container h3 span {
   color: var(--main-color);
 }
 .about-us .container p {
   color: var(--third-text-color);
+  text-align: center;
+  line-height: 1.6;
 }
 /* !-------------------------- End AboutUs section -----------------------*/
 /* !-------------------------- Start Services section -----------------------*/
