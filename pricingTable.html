@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murphy Design Pricing Table</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+      h2 {
+        color: #333;
+      }
+      .pricing-table {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .pricing-table th,
+      .pricing-table td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      .pricing-table th {
+        background: #333;
+        color: white;
+      }
+      .pricing-table tr:nth-child(even) {
+        background: #f2f2f2;
+      }
+      .highlight {
+        font-weight: bold;
+        color: #d9534f;
+      }
+      @media (max-width: 768px) {
+        .pricing-table,
+        .pricing-table th,
+        .pricing-table td {
+          display: block;
+          width: 100%;
+        }
+        .pricing-table tr {
+          margin-bottom: 10px;
+          display: block;
+          border-bottom: 2px solid #ddd;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Murphy Design – Pricing Table</h2>
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Package</th>
+          <th>Price (SAR)</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4"><b>Portfolio Design</b></td>
+          <td>Basic</td>
+          <td>500</td>
+          <td>4 projects, simple layout, high-quality PDF.</td>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>1,000</td>
+          <td>6 projects, professional design, one free revision.</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>1,800</td>
+          <td>
+            8+ projects, custom design, two free revisions, editable files +
+            print-ready PDF.
+          </td>
+        </tr>
+        <tr>
+          <td class="highlight">Extra Projects</td>
+          <td>+100 per project</td>
+          <td>Additional projects beyond the package limit.</td>
+        </tr>
+
+        <tr>
+          <td rowspan="3"><b>3D Visualization</b></td>
+          <td>Basic</td>
+          <td>300 per scene</td>
+          <td>Medium quality, basic lighting, minor adjustments.</td>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>600 per scene</td>
+          <td>High quality, realistic lighting, one free revision.</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>1,000 per scene</td>
+          <td>Professional-grade, full environment, two free revisions.</td>
+        </tr>
+
+        <tr>
+          <td rowspan="3"><b>Website Design</b></td>
+          <td>Basic</td>
+          <td>1,500</td>
+          <td>One-page website, showcases projects and contact info.</td>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>3,000</td>
+          <td>
+            Multi-page website (3-5 pages), responsive design, one month free
+            hosting.
+          </td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>5,500</td>
+          <td>
+            Fully customized design, support & updates for one month, three
+            months free hosting.
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="4"><b>Presentation Design</b></td>
+          <td>Basic</td>
+          <td>200</td>
+          <td>5 slides, simple design.</td>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>400</td>
+          <td>10 slides, includes graphics and charts.</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>700</td>
+          <td>15+ slides, professional branding, one free revision.</td>
+        </tr>
+        <tr>
+          <td class="highlight">Extra Slides</td>
+          <td>+50 per slide</td>
+          <td>Additional slides beyond the package limit.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
