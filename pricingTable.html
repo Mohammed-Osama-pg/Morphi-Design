@@ -3,198 +3,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Murphy Design Pricing Table</title>
+    <title>Murphy Design Pricing</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        margin: 20px;
-        padding: 0;
-        background-color: #f8f8f8;
         text-align: center;
-      }
-      h2 {
-        color: #333;
+        background-color: #f4f4f4;
       }
       .nav-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
         margin-bottom: 20px;
       }
       .nav-buttons button {
-        padding: 10px 15px;
+        padding: 10px 20px;
+        margin: 5px;
         border: none;
-        background: #ddd;
         cursor: pointer;
+        background-color: #ddd;
         border-radius: 5px;
       }
       .nav-buttons button.active {
-        background: #0056b3;
+        background-color: #0044cc;
         color: white;
       }
-      .pricing-table {
+      .pricing-container {
         display: none;
-        width: 60%;
+        max-width: 800px;
         margin: auto;
+      }
+      .pricing-container.active {
+        display: block;
+      }
+      .pricing-table {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      .price-card {
         background: white;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
       }
-      .pricing-table.active {
-        display: table;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      th,
-      td {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-      }
-      th {
-        background: #0056b3;
+      .price-card.standard {
+        background-color: #0044cc;
         color: white;
       }
+      .price-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-size: 2em;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #ddd;
+      }
+      .standard .price {
+        background-color: #002a80;
+      }
+      .features {
+        list-style: none;
+        padding: 0;
+      }
+      .features li {
+        padding: 5px 0;
+      }
     </style>
-  </head>
-  <body>
-    <h2>Murphy Design – Pricing</h2>
-    <div class="nav-buttons">
-      <button class="active" onclick="showTable('portfolio')">
-        Portfolio Design
-      </button>
-      <button onclick="showTable('rendering')">3D Visualization</button>
-      <button onclick="showTable('website')">Website Design</button>
-      <button onclick="showTable('presentation')">Presentation Design</button>
-    </div>
-
-    <div id="portfolio" class="pricing-table active">
-      <h3>Portfolio Design Packages</h3>
-      <table>
-        <tr>
-          <th>Package</th>
-          <th>Price (SAR)</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Basic</td>
-          <td>500</td>
-          <td>4 projects, simple layout, high-quality PDF.</td>
-        </tr>
-        <tr>
-          <td>Standard</td>
-          <td>1,000</td>
-          <td>6 projects, professional design, one free revision.</td>
-        </tr>
-        <tr>
-          <td>Premium</td>
-          <td>1,800</td>
-          <td>
-            8+ projects, custom design, two free revisions, editable files +
-            print-ready PDF.
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div id="rendering" class="pricing-table">
-      <h3>3D Visualization Packages</h3>
-      <table>
-        <tr>
-          <th>Package</th>
-          <th>Price (SAR)</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Basic</td>
-          <td>300 per scene</td>
-          <td>Medium quality, basic lighting, minor adjustments.</td>
-        </tr>
-        <tr>
-          <td>Standard</td>
-          <td>600 per scene</td>
-          <td>High quality, realistic lighting, one free revision.</td>
-        </tr>
-        <tr>
-          <td>Premium</td>
-          <td>1,000 per scene</td>
-          <td>Professional-grade, full environment, two free revisions.</td>
-        </tr>
-      </table>
-    </div>
-
-    <div id="website" class="pricing-table">
-      <h3>Website Design Packages</h3>
-      <table>
-        <tr>
-          <th>Package</th>
-          <th>Price (SAR)</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Basic</td>
-          <td>1,500</td>
-          <td>One-page website, showcases projects and contact info.</td>
-        </tr>
-        <tr>
-          <td>Standard</td>
-          <td>3,000</td>
-          <td>
-            Multi-page website (3-5 pages), responsive design, one month free
-            hosting.
-          </td>
-        </tr>
-        <tr>
-          <td>Premium</td>
-          <td>5,500</td>
-          <td>
-            Fully customized design, support & updates for one month, three
-            months free hosting.
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div id="presentation" class="pricing-table">
-      <h3>Presentation Design Packages</h3>
-      <table>
-        <tr>
-          <th>Package</th>
-          <th>Price (SAR)</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Basic</td>
-          <td>200</td>
-          <td>5 slides, simple design.</td>
-        </tr>
-        <tr>
-          <td>Standard</td>
-          <td>400</td>
-          <td>10 slides, includes graphics and charts.</td>
-        </tr>
-        <tr>
-          <td>Premium</td>
-          <td>700</td>
-          <td>15+ slides, professional branding, one free revision.</td>
-        </tr>
-      </table>
-    </div>
-
     <script>
-      function showTable(id) {
-        document.querySelectorAll(".pricing-table").forEach((table) => {
-          table.classList.remove("active");
-        });
-        document.getElementById(id).classList.add("active");
-
-        document.querySelectorAll(".nav-buttons button").forEach((button) => {
-          button.classList.remove("active");
-        });
-        event.target.classList.add("active");
+      function showPricing(service) {
+        document
+          .querySelectorAll(".pricing-container")
+          .forEach((el) => el.classList.remove("active"));
+        document.getElementById(service).classList.add("active");
+        document
+          .querySelectorAll(".nav-buttons button")
+          .forEach((el) => el.classList.remove("active"));
+        document.getElementById(service + "-btn").classList.add("active");
       }
     </script>
+  </head>
+  <body>
+    <div class="nav-buttons">
+      <button
+        id="portfolio-btn"
+        class="active"
+        onclick="showPricing('portfolio')"
+      >
+        Portfolio Design
+      </button>
+      <button id="rendering-btn" onclick="showPricing('rendering')">
+        3D Visualization
+      </button>
+      <button id="website-btn" onclick="showPricing('website')">
+        Website Design
+      </button>
+      <button id="presentation-btn" onclick="showPricing('presentation')">
+        Presentation Design
+      </button>
+    </div>
+
+    <div id="portfolio" class="pricing-container active">
+      <div class="pricing-table">
+        <div class="price-card">
+          <div class="price-title">Basic</div>
+          <div class="price">500 SAR</div>
+          <ul class="features">
+            <li>4 projects</li>
+            <li>Simple layout</li>
+            <li>High-quality PDF</li>
+          </ul>
+        </div>
+        <div class="price-card standard">
+          <div class="price-title">Standard</div>
+          <div class="price">1,000 SAR</div>
+          <ul class="features">
+            <li>6 projects</li>
+            <li>Professional design</li>
+            <li>One free revision</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <div class="price-title">Premium</div>
+          <div class="price">1,800 SAR</div>
+          <ul class="features">
+            <li>8+ projects</li>
+            <li>Custom design</li>
+            <li>Two free revisions</li>
+            <li>Editable files + print-ready PDF</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="rendering" class="pricing-container">
+      <div class="pricing-table">
+        <div class="price-card">
+          <div class="price-title">Basic</div>
+          <div class="price">300 SAR</div>
+          <ul class="features">
+            <li>Medium quality</li>
+            <li>Basic lighting</li>
+            <li>Minor adjustments</li>
+          </ul>
+        </div>
+        <div class="price-card standard">
+          <div class="price-title">Standard</div>
+          <div class="price">600 SAR</div>
+          <ul class="features">
+            <li>High quality</li>
+            <li>Realistic lighting</li>
+            <li>One free revision</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <div class="price-title">Premium</div>
+          <div class="price">1,000 SAR</div>
+          <ul class="features">
+            <li>Professional-grade</li>
+            <li>Full environment</li>
+            <li>Two free revisions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
