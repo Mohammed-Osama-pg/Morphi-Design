@@ -786,7 +786,7 @@ main .hero .scroall {
 /* !-------------------------- End Price table section -----------------------*/
 /* !-------------------------- Start Footer section -----------------------*/
 footer {
-  background-color: var(--second-background-color);
+  background-color: #f8f2ed81;
 }
 footer .container {
   padding-block: 20px;
@@ -807,7 +807,8 @@ footer .container .links-list li a {
   font-family: "bauhaus";
   padding: 20px 0;
   font-size: 24px;
-  color: var(--third-text-color);
+  color: var(--second-text-color);
+  text-decoration: underline;
 }
 footer .container ul {
   width: 100%;
@@ -823,6 +824,11 @@ footer .container .social-icons li a {
 }
 footer .social-icons {
   color: var(--main-color);
+}
+footer .social-icons ion-icon {
+  background-color: var(--seconder-color);
+  padding: 7px;
+  border-radius: 9px;
 }
 footer .container i {
   padding: 16px;
