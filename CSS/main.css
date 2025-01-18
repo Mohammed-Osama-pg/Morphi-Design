@@ -689,6 +689,7 @@ main .hero .scroall {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 .price-table .nav-buttons button {
   background-color: var(--main-background-color);
@@ -719,26 +720,34 @@ main .hero .scroall {
 .price-table .pricing-table {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
   flex-wrap: wrap;
   margin-bottom: 35px;
 }
 .price-table .price-card {
-  background: white;
+  background: var(--main-background-color);
   padding: 20px;
   border-radius: 10px;
   width: 90%;
   max-width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 36%);
   text-align: center;
+  transition: 0.35s ease-in;
+}
+.price-table .price-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgb(0 0 0);
 }
 .price-table .price-card.standard {
-  background-color: #0044cc;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--third-text-color);
 }
 .price-table .price-title {
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 23px;
+  margin-top: 18px;
+  font-family: "bauhaus";
+  font-weight: bold;
 }
 .price-table .price {
   font-size: 2em;
@@ -746,17 +755,24 @@ main .hero .scroall {
   padding: 10px;
   border-radius: 5px;
   display: inline-block;
-  background-color: #ddd;
+  background-color: var(--second-background-color);
+  font-family: "bauhaus";
+  margin-bottom: 30px;
 }
 .price-table .standard .price {
-  background-color: #002a80;
+  background-color: var(--main-text-color);
 }
 .price-table .features {
   list-style: none;
   padding: 0;
 }
 .price-table .features li {
-  padding: 5px 0;
+  padding: 10px 0;
+  font-weight: bold;
+  border-bottom: solid 2px var(--seconder-color);
+}
+.price-table .features li:last-child {
+  border: none;
 }
 @media (max-width: 600px) {
   .price-table .nav-buttons button {
