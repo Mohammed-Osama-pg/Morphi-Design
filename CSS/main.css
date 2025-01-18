@@ -676,6 +676,98 @@ main .hero .scroall {
 }
 /* End Contact section */
 /* !-------------------------- End Contact Us section -----------------------*/
+/* !-------------------------- Start Price table section -----------------------*/
+.price-table {
+  height: auto;
+  background-color: var(--second-background-color);
+}
+.price-table .nav-buttons {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.price-table .nav-buttons button {
+  background-color: var(--main-background-color);
+  font-size: 1.1rem;
+  font-family: "bauhaus";
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  transition: var(--main-transtion);
+}
+.price-table .nav-buttons button:hover {
+  background-color: var(--second-background-color);
+  color: var(--third-text-color);
+}
+.price-table .nav-buttons button.active {
+  background-color: var(--main-color);
+  color: white;
+}
+.price-table .pricing-container {
+  display: none;
+  max-width: 90%;
+  margin: auto;
+}
+.price-table .pricing-container.active {
+  display: block;
+}
+.price-table .pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+.price-table .price-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.price-table .price-card.standard {
+  background-color: #0044cc;
+  color: white;
+}
+.price-table .price-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.price-table .price {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #ddd;
+}
+.price-table .standard .price {
+  background-color: #002a80;
+}
+.price-table .features {
+  list-style: none;
+  padding: 0;
+}
+.price-table .features li {
+  padding: 5px 0;
+}
+@media (max-width: 600px) {
+  .price-table .nav-buttons button {
+    margin: 5px 0;
+  }
+  .price-table .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* !-------------------------- End Price table section -----------------------*/
 /* !-------------------------- Start Footer section -----------------------*/
 footer {
   background-color: var(--second-background-color);
