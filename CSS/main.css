@@ -254,10 +254,10 @@ section {
 /* ?-------------------------- The background image 1 -------------------- */
 .background-1 {
   overflow: hidden;
-  background-image: url(../Imgs/hero-background.png);
-  background-size: 715px 455px;
-  background-position-x: -14vh;
-  background-position-y: 13vh;
+  background-image: url(../Imgs/Group\ 496.png);
+  background-size: contain;
+  /* background-position-x: -14vh; */
+  /* background-position-y: 13vh; */
 }
 main .hero .container {
   display: flex;
