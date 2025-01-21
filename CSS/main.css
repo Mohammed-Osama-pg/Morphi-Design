@@ -152,11 +152,10 @@ section {
 /* !-------------------------- Start header -----------------------*/
 .header {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  padding-top: 20px;
-  z-index: 4;
+  padding-block: 20px;
+  top: 0;
+  z-index: 1000;
 }
 .header .container {
   display: flex;
@@ -178,6 +177,7 @@ section {
 .header .btn.active {
   left: 50px;
   opacity: 1;
+  border-color: var(--main-color);
 }
 .nav-open-btn {
   font-size: 2.6rem;
@@ -200,7 +200,6 @@ section {
 .nav-open-btn.active .close-icon {
   display: block;
 }
-
 .navbar {
   position: absolute;
   top: 0;
@@ -223,13 +222,13 @@ section {
   visibility: visible;
   transform: translatex(0);
 }
-.navbar .navbar-list > li {
+.navbar .nav-links > li {
   font-family: "bauhaus";
   font-size: 1.3rem;
   margin-top: 20px;
   transition: var(--main-transtion);
 }
-.navbar .navbar-list > li:hover {
+.navbar .nav-linkslist > li:hover {
   font-weight: bold;
   color: #ffc215;
 }
@@ -247,6 +246,53 @@ section {
 .header .overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .navbar {
+    position: relative;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(0);
+    background-color: transparent;
+  }
+  .navbar .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  .navbar .nav-links > li {
+    margin-top: 0;
+    color: var(--second-text-color);
+    font-size: 1.6rem;
+  }
+  .navbar .nav-links > li:hover {
+    color: var(--main-color);
+  }
+  .nav-open-btn {
+    display: none;
+  }
+  .header .btn {
+    position: relative;
+    opacity: 1;
+    top: 0;
+    left: 0;
+  }
+  .header .cta .btn-third {
+    background-color: var(--main-background-color);
+    font-size: 1.1rem;
+    font-family: "bauhaus";
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    transition: var(--main-transtion);
+  }
+}
+@media (min-width: 1279px) {
+  .navbar .nav-links {
+    gap: 50px;
+  }
 }
 /* !-------------------------- End header -----------------------*/
 
