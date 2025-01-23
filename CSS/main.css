@@ -892,7 +892,7 @@ main .hero .scroall {
 /* !-------------------------- End Contact Us section -----------------------*/
 /* !-------------------------- Start Footer section -----------------------*/
 footer {
-  background-color: #f8f2ed81;
+  background-color: var(--second-background-color);
 }
 footer .container {
   padding-block: 20px;
@@ -913,7 +913,7 @@ footer .container .links-list li a {
   font-family: "bauhaus";
   padding: 20px 0;
   font-size: 24px;
-  color: var(--second-text-color);
+  color: var(--third-text-color);
   text-decoration: underline;
 }
 footer .container ul {
@@ -943,7 +943,7 @@ footer .container i {
 footer .container .line {
   width: 80%;
   height: 5px;
-  background-color: var(--seconder-color);
+  background-color: var(--third-text-color);
   border-radius: 3px;
 }
 /* !-------------------------- End Footer section ----------------------- */
