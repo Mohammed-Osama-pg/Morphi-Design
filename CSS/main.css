@@ -684,105 +684,13 @@ main .hero .scroall {
   }
 }
 /* !-------------------------- End Portfolio section -----------------------*/
-/* !-------------------------- Start Contact Us section -----------------------*/
-.background-2 {
-  background-image: url(../Imgs/services-background.png);
-}
-/* Start Contact section */
-.contact {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: auto;
-}
-.contact .info {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact .info .lable {
-  font-weight: 800;
-  font-size: 30px;
-  margin-bottom: 30px;
-  color: var(--seconder-color);
-  font-family: "bauhaus";
-  position: relative;
-  left: -45px;
-}
-.contact .info .link {
-  display: block;
-  text-decoration: none;
-  color: var(--main-text-color);
-  font-size: 40px;
-  font-weight: bold;
-  font-family: "bauhaus";
-  position: relative;
-  z-index: 5;
-  left: 80px;
-}
-.contact .info .link::before {
-  content: "";
-  display: block;
-  width: calc(100% + 30px);
-  height: 40px;
-  background-color: var(--main-color);
-  position: absolute;
-  bottom: -5px;
-  right: -13px;
-  z-index: -1;
-  border-radius: 10px;
-}
-.contact .info .social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  font-size: 19px;
-  font-weight: 500;
-  color: var(--main-text-color);
-  position: relative;
-  z-index: 5;
-  left: -45px;
-}
-.contact .info ul li:first-child {
-  font-weight: 700;
-}
-.contact .info ion-icon {
-  margin-left: 26px;
-  color: var(--main-color);
-  background-color: var(--main-text-color);
-  padding: 8px;
-  border-radius: 6px;
-  font-size: 20px;
-}
-@media (max-width: 767px) {
-  .contact .info .lable,
-  .contact .info .link {
-    font-size: 25px;
-  }
-  .contact .info .link,
-  .contact .info .social {
-    left: -10px;
-  }
-  .contact .info i {
-    margin-left: 10px;
-    color: var(--main-color);
-    background-color: var(--therd-text-color);
-    padding: 8px;
-    border-radius: 6px;
-  }
-  .contact .info .lable {
-    left: 0;
-  }
-}
-/* End Contact section */
-/* !-------------------------- End Contact Us section -----------------------*/
 /* !-------------------------- Start Price table section -----------------------*/
 .price-table {
   height: auto;
-  background-color: var(--second-background-color);
+  background-color: var(--main-text-color);
+}
+.price-table .section-title {
+  color: var(--main-background-color);
 }
 .price-table .nav-buttons {
   padding: 15px;
@@ -887,6 +795,101 @@ main .hero .scroall {
   }
 }
 /* !-------------------------- End Price table section -----------------------*/
+/* !-------------------------- Start Contact Us section -----------------------*/
+.background-2 {
+  background-image: url(../Imgs/services-background.png);
+}
+/* Start Contact section */
+.contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
+}
+.contact .info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .info .lable {
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: var(--seconder-color);
+  font-family: "bauhaus";
+  position: relative;
+  left: -45px;
+}
+.contact .info .link {
+  display: block;
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "bauhaus";
+  position: relative;
+  z-index: 5;
+  left: 80px;
+}
+.contact .info .link::before {
+  content: "";
+  display: block;
+  width: calc(100% + 30px);
+  height: 40px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -5px;
+  right: -13px;
+  z-index: -1;
+  border-radius: 10px;
+}
+.contact .info .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--main-text-color);
+  position: relative;
+  z-index: 5;
+  left: -45px;
+}
+.contact .info ul li:first-child {
+  font-weight: 700;
+}
+.contact .info ion-icon {
+  margin-left: 26px;
+  color: var(--main-color);
+  background-color: var(--main-text-color);
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .contact .info .lable,
+  .contact .info .link {
+    font-size: 25px;
+  }
+  .contact .info .link,
+  .contact .info .social {
+    left: -10px;
+  }
+  .contact .info i {
+    margin-left: 10px;
+    color: var(--main-color);
+    background-color: var(--therd-text-color);
+    padding: 8px;
+    border-radius: 6px;
+  }
+  .contact .info .lable {
+    left: 0;
+  }
+}
+/* End Contact section */
+/* !-------------------------- End Contact Us section -----------------------*/
 /* !-------------------------- Start Footer section -----------------------*/
 footer {
   background-color: #f8f2ed81;
