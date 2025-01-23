@@ -542,6 +542,34 @@ main .hero .scroall {
   transform: scale(1.5);
   border: 3px solid var(--main-color);
 }
+@media (min-width: 767px) {
+  .services .carousel {
+    height: 70vw;
+    width: 70vw;
+    left: -30%;
+    border: 4px solid var(--seconder-color);
+  }
+  .services .carousel .service-slide span,
+  .services .carousel .service-slide h3 {
+    font-size: 35px;
+  }
+  .services .carousel .service-slide:nth-child(2) {
+    top: 100%;
+    transform: rotate(90deg) translateX(0px);
+  }
+  .services .carousel .service-slide:nth-child(4) {
+    bottom: 100%;
+    transform: rotate(270deg) translateX(0px);
+  }
+  .services .carousel .service-slide p {
+    width: 300px;
+    font-size: 17px;
+  }
+  .imge-container img:nth-child(4) {
+    object-position: -2% -17%;
+    width: 100%;
+  }
+}
 /* !-------------------------- End Services section -----------------------*/
 /* !-------------------------- Start Portfolio section -----------------------*/
 .portfolio {
