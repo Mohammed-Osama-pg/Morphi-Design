@@ -390,6 +390,18 @@ main .hero .scroall {
   text-align: center;
   line-height: 1.6;
 }
+@media (min-width: 767px) {
+  .about-us .container {
+    flex-direction: row-reverse;
+  }
+  .about-us .container .text {
+    padding-inline: 20px;
+  }
+  .about-us .container .text h3,
+  .about-us .container .text p {
+    text-align: left;
+  }
+}
 /* !-------------------------- End AboutUs section -----------------------*/
 /* !-------------------------- Start Services section -----------------------*/
 .services {
