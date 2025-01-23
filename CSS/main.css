@@ -353,8 +353,13 @@ main .hero .scroall {
 /* !-------------------------- End Hero Section -----------------------*/
 /* !-------------------------- Start AboutUs section -----------------------*/
 .about-us {
-  height: 360px;
+  height: auto;
   background-color: var(--second-background-color);
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about-us .container {
   height: fit-content;
@@ -362,17 +367,25 @@ main .hero .scroall {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 45px;
+  max-width: 920px;
 }
-.about-us .container h3 {
+.about-us .about-us-img {
+  max-width: 375px;
+}
+.about-us .about-us-img img {
+  width: 100%;
+}
+.about-us .container .text h3 {
   width: 100%;
   margin-bottom: 18px;
   font-size: 26px;
   text-align: center;
 }
-.about-us .container h3 span {
+.about-us .container .text h3 span {
   color: var(--main-color);
 }
-.about-us .container p {
+.about-us .container .text p {
   color: var(--third-text-color);
   text-align: center;
   line-height: 1.6;
