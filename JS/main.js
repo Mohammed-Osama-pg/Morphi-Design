@@ -18,11 +18,16 @@ const overlay = document.querySelector("[data-overlay]");
 const contactBtn = document.querySelector("[data-contact]");
 const navbarList = document.querySelector(".nav-links");
 const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  navbarToggleBtn.classList.toggle("active");
-  overlay.classList.toggle("active");
-  contactBtn.classList.toggle("active");
-  document.body.classList.toggle("nav-active");
+  if (window.innerWidth < 800) {
+    console.log("shode work");
+    navbar.classList.toggle("active");
+    navbarToggleBtn.classList.toggle("active");
+    overlay.classList.toggle("active");
+    contactBtn.classList.toggle("active");
+    document.body.classList.toggle("nav-active");
+  } else {
+    console.log(window.innerWidth > 800);
+  }
 };
 addEventOnElement(
   [navbarToggleBtn, overlay, navbarList, contactBtn],
