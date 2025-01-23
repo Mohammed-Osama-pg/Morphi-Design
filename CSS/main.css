@@ -545,7 +545,7 @@ main .hero .scroall {
   .services .carousel {
     height: 70vw;
     width: 70vw;
-    left: -30%;
+    left: -30vw;
     border: 4px solid var(--seconder-color);
   }
   .services .carousel .service-slide span,
