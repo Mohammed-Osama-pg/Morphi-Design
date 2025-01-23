@@ -320,6 +320,9 @@ main .hero .hero-bannar {
   position: relative;
   top: 25px;
 }
+main .hero .hero-bannar .hero-img {
+  max-width: 755px;
+}
 main .hero .hero-bannar img {
   width: 100%;
   margin-block: 30px;
