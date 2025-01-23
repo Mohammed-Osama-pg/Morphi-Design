@@ -229,8 +229,7 @@ section {
   transition: var(--main-transtion);
 }
 .navbar .nav-linkslist > li:hover {
-  font-weight: bold;
-  color: #ffc215;
+  color: var(--main-color);
 }
 .header .overlay {
   position: fixed;
@@ -893,6 +892,11 @@ main .hero .scroall {
 /* !-------------------------- Start Footer section -----------------------*/
 footer {
   background-color: var(--second-background-color);
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 footer .container {
   padding-block: 20px;
@@ -915,6 +919,10 @@ footer .container .links-list li a {
   font-size: 24px;
   color: var(--third-text-color);
   text-decoration: underline;
+  transition: var(--main-transtion);
+}
+footer .container .links-list li a:hover {
+  color: var(--main-color);
 }
 footer .container ul {
   width: 100%;
@@ -940,10 +948,26 @@ footer .container i {
   padding: 16px;
   font-size: 20px;
 }
-footer .container .line {
+footer .line {
   width: 80%;
   height: 5px;
   background-color: var(--third-text-color);
   border-radius: 3px;
+}
+@media (min-width: 900px) {
+  footer .container {
+    flex-direction: row;
+    max-width: 1080px;
+    padding-inline: 50px;
+  }
+  footer .container .logo {
+    max-width: 81px;
+  }
+  footer .container ul {
+    width: fit-content;
+  }
+  footer .container .links-list {
+    gap: 30px;
+  }
 }
 /* !-------------------------- End Footer section ----------------------- */
