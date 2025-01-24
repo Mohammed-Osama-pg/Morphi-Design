@@ -4,6 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .language-selector {
+        position: relative;
+        display: inline-block;
+      }
+
+      .lang-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .lang-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 150px;
+        border-radius: 5px;
+      }
+
+      .lang-option {
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .lang-option:hover {
+        background-color: #f0f0f0;
+      }
+
+      .language-selector:hover .lang-dropdown {
+        display: block;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="language-selector">
+      <button class="lang-btn" id="current-lang">English</button>
+      <ul class="lang-dropdown" id="lang-options">
+        <li data-lang="en" class="lang-option">English</li>
+        <li data-lang="ar" class="lang-option">Arabic</li>
+        <li data-lang="fr" class="lang-option">French</li>
+        <li data-lang="es" class="lang-option">Spanish</li>
+      </ul>
+    </div>
+
+    <h1>Welcome to Morphi Design!</h1>
+  </body>
 </html>
