@@ -231,6 +231,47 @@ section {
 .navbar .nav-linkslist > li:hover {
   color: var(--main-color);
 }
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+.lang-btn {
+  padding: 5px 25px 5px 10px;
+  background-color: transparent;
+  font-family: "bauhaus";
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--main-text-color);
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  cursor: pointer;
+}
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 130px;
+  border-radius: 5px;
+}
+.lang-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.lang-option:hover {
+  background-color: #f0f0f0;
+}
+.language-selector:hover .lang-dropdown {
+  display: block;
+}
 .header .overlay {
   position: fixed;
   top: 0;
