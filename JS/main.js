@@ -177,3 +177,56 @@ function showPricing(service) {
     .forEach((el) => el.classList.remove("active"));
   document.getElementById(service + "-btn").classList.add("active");
 }
+
+// Languages that require RTL direction
+const rtlLanguages = ["ar"];
+
+// Function to set the selected language and update the site
+function setLanguage(languageCode) {
+  // Update displayed current language
+  const currentLangBtn = document.getElementById("current-lang");
+  const langText = document.querySelector(
+    `[data-lang="${languageCode}"]`
+  ).textContent;
+  currentLangBtn.textContent = langText;
+
+  // Save selected language to localStorage
+  localStorage.setItem("selectedLanguage", languageCode);
+
+  // Update text content on the site
+  updateSiteText(languageCode);
+
+  // Update site direction
+  updateSiteDirection(languageCode);
+}
+
+// Function to update text content dynamically
+function updateSiteText(languageCode) {
+  document.querySelectorAll("[data-key]").forEach((element) => {
+    const key = element.getAttribute("data-key");
+    element.textContent =
+      translations[languageCode][key] || translations.en[key];
+  });
+}
+
+// Function to update site direction (LTR/RTL)
+function updateSiteDirection(languageCode) {
+  const isRTL = rtlLanguages.includes(languageCode);
+  document.documentElement.setAttribute("dir", isRTL ? "rtl" : "ltr");
+}
+
+// Event listeners for language options
+document.querySelectorAll(".lang-option").forEach((option) => {
+  option.addEventListener("click", (event) => {
+    const selectedLang = event.target.getAttribute("data-lang");
+    setLanguage(selectedLang);
+  });
+});
+
+// Set the default or saved language on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLanguage = localStorage.getItem("selectedLanguage") || "en"; // Default to English
+  setLanguage(savedLanguage);
+});
+
+console.log("work");
