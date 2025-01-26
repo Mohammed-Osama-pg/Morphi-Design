@@ -235,6 +235,7 @@ section {
 .language-selector {
   position: relative;
   display: inline-block;
+  display: none;
 }
 .lang-btn {
   padding: 5px 25px 5px 10px;
