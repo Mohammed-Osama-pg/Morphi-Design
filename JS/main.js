@@ -214,6 +214,7 @@ function updateSiteText(languageCode) {
 function updateSiteDirection(languageCode) {
   const isRTL = rtlLanguages.includes(languageCode);
   document.documentElement.setAttribute("dir", isRTL ? "rtl" : "ltr");
+  document.documentElement.setAttribute("lang", isRTL ? "ar" : "en");
 }
 
 // Event listeners for language options
