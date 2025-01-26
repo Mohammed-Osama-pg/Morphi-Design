@@ -1,10 +1,10 @@
 // Translation object for all site text
 const translations = {
   // !--------------- Start English ---------------------------
-  en: {},
+  en: { headerCurrentLang: "English" },
   // !--------------- End English ---------------------------
   // !--------------- Start Arabic ---------------------------
-  ar: {},
+  ar: { headerCurrentLang: "العربية" },
   // !--------------- End Arabic ---------------------------
 };
 

@@ -203,10 +203,10 @@ function setLanguage(languageCode) {
 
 // Function to update text content dynamically
 function updateSiteText(languageCode) {
-  document.querySelectorAll("[data-key]").forEach((element) => {
-    const key = element.getAttribute("data-key");
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const i18n = element.getAttribute("data-i18n");
     element.textContent =
-      translations[languageCode][key] || translations.en[key];
+      translations[languageCode][i18n] || translations.en[i18n];
   });
 }
 
