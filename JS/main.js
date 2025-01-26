@@ -1,4 +1,5 @@
-"use strict";
+import translations from "../JS/translations.js";
+("use strict");
 
 /**
  * Add event on multiple elements
@@ -228,5 +229,3 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedLanguage = localStorage.getItem("selectedLanguage") || "en"; // Default to English
   setLanguage(savedLanguage);
 });
-
-console.log("work");
