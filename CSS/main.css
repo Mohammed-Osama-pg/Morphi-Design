@@ -13,20 +13,30 @@
 
   /* *-------------- Transtion ------------ */
   --main-transtion: 0.7s ease-in-out;
+
+  /* *-------------- Font Famliy ------------ */
+  --heading-font: "bauhaus";
+  --paragraph-font: "DINNext";
 }
 /* !------------------------End Valuable rules--------------------- */
 
 /* !--------------------------Start Fonts---------------------------- */
 @font-face {
-  font-family: "centurygothic";
-  src: url(../fonts/centurygothic.ttf) format("woff");
+  font-family: "DINNext";
+  src: url(../fonts/DINNextLTArabic-Regular-4.ttf) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "centurygothic";
-  src: url(../fonts/centurygothic_bold.ttf) format("woff");
+  font-family: "DINNext";
+  src: url(../fonts/DINNextLTArabic-Bold-4.ttf) format("woff");
   font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DINNext";
+  src: url(../fonts/DINNEXTLTARABIC-LIGHT-2-2.ttf) format("woff");
+  font-weight: lighter;
   font-style: normal;
 }
 @font-face {
@@ -60,7 +70,7 @@ button {
   border: none;
 }
 html {
-  font-family: "centurygothic";
+  font-family: var(--paragraph-font);
   scroll-behavior: smooth;
 }
 body {
@@ -86,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   color: var(--main-text-color);
 }
 p {
@@ -132,7 +142,7 @@ section {
 .btn-third {
   background-color: var(--main-background-color);
   font-size: 1.1rem;
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   font-weight: bold;
   padding: 5px 10px;
   border: 2px solid var(--main-color);
@@ -224,7 +234,7 @@ section {
   transform: translatex(0);
 }
 .navbar .nav-links > li {
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   font-size: 1.3rem;
   margin-top: 20px;
   transition: var(--main-transtion);
@@ -240,7 +250,7 @@ section {
 .lang-btn {
   padding: 5px 25px 5px 10px;
   background-color: transparent;
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   font-size: 17px;
   font-weight: bold;
   color: var(--main-text-color);
@@ -324,7 +334,7 @@ section {
   .header .cta .btn-third {
     background-color: var(--main-background-color);
     font-size: 1.1rem;
-    font-family: "bauhaus";
+    font-family: var(--heading-font);
     font-weight: bold;
     padding: 5px 10px;
     border: 2px solid var(--main-color);
@@ -530,7 +540,7 @@ main .hero .scroall {
 .services .carousel .service-slide span {
   font-size: 18px;
   color: var(--main-color);
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
 }
 .services .carousel .service-slide h3 {
   font-size: 18px;
@@ -747,7 +757,7 @@ main .hero .scroall {
 .price-table .nav-buttons button {
   background-color: var(--main-background-color);
   font-size: 1.1rem;
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   font-weight: bold;
   padding: 5px 10px;
   border: 2px solid var(--main-color);
@@ -799,7 +809,7 @@ main .hero .scroall {
   font-size: 1.5em;
   margin-bottom: 23px;
   margin-top: 18px;
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   font-weight: bold;
 }
 .price-table .price {
@@ -809,7 +819,7 @@ main .hero .scroall {
   border-radius: 5px;
   display: inline-block;
   background-color: var(--second-background-color);
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   margin-bottom: 30px;
 }
 .price-table .standard .price {
@@ -860,7 +870,7 @@ main .hero .scroall {
   font-size: 30px;
   margin-bottom: 30px;
   color: var(--seconder-color);
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   position: relative;
   left: -45px;
 }
@@ -870,7 +880,7 @@ main .hero .scroall {
   color: var(--main-text-color);
   font-size: 40px;
   font-weight: bold;
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   position: relative;
   z-index: 5;
   left: 80px;
@@ -957,7 +967,7 @@ footer .container .logo {
   margin: 20px 0;
 }
 footer .container .links-list li a {
-  font-family: "bauhaus";
+  font-family: var(--heading-font);
   padding: 20px 0;
   font-size: 24px;
   color: var(--third-text-color);
