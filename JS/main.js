@@ -215,6 +215,10 @@ function updateSiteDirection(languageCode) {
   const isRTL = rtlLanguages.includes(languageCode);
   document.documentElement.setAttribute("dir", isRTL ? "rtl" : "ltr");
   document.documentElement.setAttribute("lang", isRTL ? "ar" : "en");
+  document.documentElement.style.setProperty(
+    "--heading-font",
+    isRTL ? "DINNext" : "bauhaus"
+  );
 }
 
 // Event listeners for language options
