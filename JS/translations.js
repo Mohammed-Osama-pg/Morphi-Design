@@ -24,6 +24,10 @@ const translations = {
     AboutUsPargraph:
       "We turn your architectural creativity into powerful marketing tools with sleek portfolios, stunning visualizations, and custom websites to elevate your digital presence. Let’s shape your ideas into a brand that matches your ambition!",
     // ?------ End About us Section ---------------
+    // ?------ Start Portfolio section ---------------
+    portfolioTitle: "Our",
+    portfolioTitleSpan: "Work",
+    // ?------ End Portfolio section ---------------
   },
   // !--------------- End English ---------------------------
   // !--------------- Start Arabic ---------------------------
@@ -50,6 +54,10 @@ const translations = {
     AboutUsPargraph:
       "نحن نحول إبداعك المعماري إلى أدوات تسويقية قوية من خلال ملفات أعمال أنيقة وتصورات مذهلة ومواقع ويب مخصصة لتعزيز حضورك الرقمي. دعنا نشكل أفكارك في علامة تجارية تتناسب مع طموحاتك!",
     // ?------ End About us Section ---------------
+    // ?------ Start Portfolio section ---------------
+    portfolioTitle: "معرض",
+    portfolioTitleSpan: "أعمالنا",
+    // ?------ End Portfolio section ---------------
   },
   // !--------------- End Arabic ---------------------------
 };
