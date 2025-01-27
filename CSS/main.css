@@ -633,6 +633,7 @@ main .hero .scroall {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  direction: ltr;
 }
 .portfolio .container {
   display: flex;
