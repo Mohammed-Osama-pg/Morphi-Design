@@ -12,6 +12,10 @@ const translations = {
     headerLangOptionArabic: "Arabic",
     headerCtaContactUs: "Contact us",
     // ?------ End header ---------------
+    // ?------ Start Hero Section ---------------
+    heroIntorText: "elevate your architectural presencea with us",
+    heroScroallText: "scroll down for more info",
+    // ?------ End Hero Section ---------------
   },
   // !--------------- End English ---------------------------
   // !--------------- Start Arabic ---------------------------
@@ -26,6 +30,10 @@ const translations = {
     headerLangOptionArabic: "العربية",
     headerCtaContactUs: "تواصل معنا",
     // ?------ End header ---------------
+    // ?------ Start Hero Section ---------------
+    heroIntorText: "أرتقي بحضورك المعماري معنا",
+    heroScroallText: "تعرف علينا",
+    // ?------ End Hero Section ---------------
   },
   // !--------------- End Arabic ---------------------------
 };
