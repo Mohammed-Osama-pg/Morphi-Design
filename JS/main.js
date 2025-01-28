@@ -207,6 +207,11 @@ function updateSiteDirection(languageCode) {
     "--heading-font",
     isRTL ? "DINNext" : "bauhaus"
   );
+  if (document.documentElement.getAttribute("lang") === "ar") {
+    carousel.classList.add("arabic");
+  } else {
+    carousel.classList.remove("arabic");
+  }
 }
 
 // Event listeners for language options

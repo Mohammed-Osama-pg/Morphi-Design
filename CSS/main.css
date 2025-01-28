@@ -483,6 +483,10 @@ main .hero .scroall {
   position: relative;
   left: -60%;
 }
+.services .carousel.arabic {
+  left: auto;
+  right: -60%;
+}
 .imge-container {
   position: absolute;
   overflow: hidden;
