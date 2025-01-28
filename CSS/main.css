@@ -408,11 +408,14 @@ main .hero .scroall {
 .about-us {
   height: auto;
   background-color: var(--second-background-color);
-  padding-bottom: 30px;
+  padding-bottom: 65px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.about-us .section-title {
+  margin-bottom: 40px;
 }
 .about-us .container {
   height: fit-content;
