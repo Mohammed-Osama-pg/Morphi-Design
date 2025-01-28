@@ -611,11 +611,11 @@ main .hero .scroall {
   }
   .services .carousel .service-slide:nth-child(2) {
     top: 100%;
-    transform: rotate(90deg) translateX(0px);
+    transform: rotate(90deg) translateX(16px);
   }
   .services .carousel .service-slide:nth-child(4) {
     bottom: 100%;
-    transform: rotate(270deg) translateX(0px);
+    transform: rotate(270deg) translateX(16px);
   }
   .services .carousel .service-slide p {
     width: 300px;
