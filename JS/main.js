@@ -217,6 +217,7 @@ function updateSiteDirection(languageCode) {
   } else {
     carousel.classList.remove("arabic");
   }
+  check();
 }
 
 // Event listeners for language options
