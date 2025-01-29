@@ -174,6 +174,7 @@ filterButtons.forEach((button) =>
 
 // Languages that require RTL direction
 const rtlLanguages = ["ar"];
+const portArrowBtn = document.querySelectorAll(".wrapper ion-icon");
 
 // Function to set the selected language and update the site
 function setLanguage(languageCode) {
@@ -212,6 +213,9 @@ function updateSiteDirection(languageCode) {
     "--heading-font",
     isRTL ? "DINNext" : "bauhaus"
   );
+  portArrowBtn.forEach((btn) => {
+    btn.classList.remove("flip-rtl");
+  });
   if (document.documentElement.getAttribute("lang") === "ar") {
     carousel.classList.add("arabic");
   } else {
