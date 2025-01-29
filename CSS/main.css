@@ -487,14 +487,14 @@ main .hero .scroall {
   left: auto;
   right: -60%;
 }
-.imge-container {
+.carousel .imge-container {
   position: absolute;
   overflow: hidden;
   width: 97%;
   height: 97%;
   border-radius: 50%;
 }
-.imge-container img {
+.carousel .imge-container img {
   object-fit: cover;
   object-position: center;
   position: absolute;
@@ -503,19 +503,22 @@ main .hero .scroall {
   opacity: 0;
   transition: var(--main-transtion);
 }
-.imge-container img.active {
+.carousel.arabic .imge-container img {
+  object-position: right;
+}
+.carousel .imge-container img.active {
   opacity: 1;
 }
-.imge-container img:nth-child(1) {
+.carousel .imge-container img:nth-child(1) {
   transform: rotate(0);
 }
-.imge-container img:nth-child(2) {
+.carousel .imge-container img:nth-child(2) {
   transform: rotate(90deg);
 }
-.imge-container img:nth-child(3) {
+.carousel .imge-container img:nth-child(3) {
   transform: rotate(-180deg);
 }
-.imge-container img:nth-child(4) {
+.carousel .imge-container img:nth-child(4) {
   transform: rotate(270deg);
   object-position: -31% -17%;
   width: 112%;
