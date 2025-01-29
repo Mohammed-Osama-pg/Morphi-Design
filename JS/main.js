@@ -102,8 +102,13 @@ function check() {
   btnCheck();
 }
 function rotate() {
-  const rotation = -(conte - 1) * 90;
-  carousel.style.transform = `rotate(${rotation}deg)`;
+  if (document.documentElement.getAttribute("lang") === "ar") {
+    const rotation = (conte - 1) * 90;
+    carousel.style.transform = `rotate(${rotation}deg)`;
+  } else {
+    const rotation = -(conte - 1) * 90;
+    carousel.style.transform = `rotate(${rotation}deg)`;
+  }
 }
 function btnCheck() {
   nextBtn.style.cursor = conte === length ? "not-allowed" : "pointer";
