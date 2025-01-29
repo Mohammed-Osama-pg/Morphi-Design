@@ -698,6 +698,9 @@ main .hero .scroall {
   .carousel.arabic .imge-container img:nth-child(4) {
     height: 113%;
   }
+  .control-points {
+    transform: scale(1);
+  }
 }
 @media (min-width: 1279px) {
   .services .carousel.arabic .service-slide:nth-child(2) {
@@ -708,6 +711,9 @@ main .hero .scroall {
   }
   .services .carousel.arabic .service-slide p {
     font-size: 20px;
+  }
+  .control-points {
+    transform: scale(1.3);
   }
 }
 /* !-------------------------- End Services section -----------------------*/
