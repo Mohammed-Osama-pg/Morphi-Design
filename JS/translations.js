@@ -47,6 +47,11 @@ const translations = {
     // ?------ Start Portfolio section ---------------
     portfolioTitle: "Our",
     portfolioTitleSpan: "Work",
+    all: "all",
+    portfolio: "portfolio",
+    visualization: "visualization",
+    presentation: "presentation",
+    website: "website",
     // ?------ End Portfolio section ---------------
   },
   // !--------------- End English ---------------------------
@@ -97,6 +102,11 @@ const translations = {
     // ?------ Start Portfolio section ---------------
     portfolioTitle: "معرض",
     portfolioTitleSpan: "أعمالنا",
+    all: "الكل",
+    portfolio: "معرض الاعمال",
+    visualization: "أظهار معماري",
+    presentation: "عرض معماري",
+    website: "موقع ألكتروني",
     // ?------ End Portfolio section ---------------
   },
   // !--------------- End Arabic ---------------------------
