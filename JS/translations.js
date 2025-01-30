@@ -53,6 +53,85 @@ const translations = {
     presentation: "presentation",
     website: "website",
     // ?------ End Portfolio section ---------------
+    // ?------ Start Price table section ---------------
+    priceTableTitle: "choose your",
+    priceTableTitleSpan: "package",
+    // !price Buttons
+    priceBtnPortfolio: "Portfolio Design",
+    priceBtnRendering: "3D Visualization",
+    priceBtnWebsite: "Website Design",
+    priceBtnPresentation: "Presentation",
+    // !price Card for portfolio Basic ----------------------
+    portfolioBasicPriceTitle: "Basic",
+    portfolioPriceBasicSalary: "500 SAR",
+    portfolioPriceBasicFeture1: "4 projects",
+    portfolioPriceBasicFeture2: "Simple layout",
+    portfolioPriceBasicFeture3: "High-quality PDF",
+    // !price Card for portfolio Standard
+    portfolioStandardPriceTitle: "Standard",
+    portfolioPriceStandardSalary: "1,000 SAR",
+    portfolioPriceStandardFeture1: "6 projects",
+    portfolioPriceStandardFeture2: "Professional design",
+    portfolioPriceStandardFeture3: "One free revision",
+    // !price Card for portfolio Premium
+    portfolioPremiumPriceTitle: "Premium",
+    portfolioPricePremiumSalary: "1,800 SAR",
+    portfolioPricePremiumFeture1: "8+ projects",
+    portfolioPricePremiumFeture2: "Custom design",
+    portfolioPricePremiumFeture3: "Two free revisions",
+    portfolioPricePremiumFeture4: "Editable files + print-ready PDF",
+    // !price Card for rendering Basic ----------------------
+    renderingBasicPriceTitle: "Basic",
+    renderingPriceBasicSalary: "300 SAR",
+    renderingPriceBasicFeture1: "Medium quality",
+    renderingPriceBasicFeture2: "Basic lighting",
+    renderingPriceBasicFeture3: "Minor adjustments",
+    // !price Card for rendering Standard
+    renderingStandardPriceTitle: "Standard",
+    renderingPriceStandardSalary: "600 SAR",
+    renderingPriceStandardFeture1: "High quality",
+    renderingPriceStandardFeture2: "Realistic lighting",
+    renderingPriceStandardFeture3: "One free revision",
+    // !price Card for rendering Premium
+    renderingPremiumPriceTitle: "Premium",
+    renderingPricePremiumSalary: "1,000 SAR",
+    renderingPricePremiumFeture1: "Professional-grade",
+    renderingPricePremiumFeture2: "Full environment",
+    renderingPricePremiumFeture3: "Two free revisions",
+    // !price Card for website Basic ----------------------
+    websiteBasicPriceTitle: "Basic",
+    websitePriceBasicSalary: "1,500 SAR",
+    websitePriceBasicFeture1: "ne-page website",
+    websitePriceBasicFeture2: "Showcases projects & contact info",
+    // !price Card for website Standard
+    websiteStandardPriceTitle: "Standard",
+    websitePriceStandardSalary: "3,000 SAR",
+    websitePriceStandardFeture1: "Multi-page website (3-5 pages)",
+    websitePriceStandardFeture2: "Responsive design",
+    websitePriceStandardFeture3: "One month free hosting",
+    // !price Card for website Premium
+    websitePremiumPriceTitle: "Premium",
+    websitePricePremiumSalary: "5,500 SAR",
+    websitePricePremiumFeture1: "Fully customized design",
+    websitePricePremiumFeture2: "Support & updates for one month",
+    websitePricePremiumFeture3: "Three months free hosting",
+    // !price Card for presentation Basic ----------------------
+    presentationBasicPriceTitle: "Basic",
+    presentationPriceBasicSalary: "200 SAR",
+    presentationPriceBasicFeture2: "Simple design",
+    presentationPriceBasicFeture1: "5 slides",
+    // !price Card for presentation Standard
+    presentationStandardPriceTitle: "Standard",
+    presentationPriceStandardSalary: "400 SAR",
+    presentationPriceStandardFeture1: "10 slides",
+    presentationPriceStandardFeture2: "Includes graphics and charts",
+    // !price Card for presentation Premium
+    presentationPremiumPriceTitle: "Premium",
+    presentationPricePremiumSalary: "700 SAR",
+    presentationPricePremiumFeture1: "15+ slides",
+    presentationPricePremiumFeture2: "Professional branding",
+    presentationPricePremiumFeture3: "One free revision",
+    // ?------ End Price table section ---------------
   },
   // !--------------- End English ---------------------------
   // !--------------- Start Arabic ---------------------------
