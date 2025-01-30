@@ -396,31 +396,38 @@
     <div class="background-2">
       <!-- *------------------ Start Price table section ------------------ -->
       <section class="price-table" id="price-table">
-        <h2 class="section-title">choose your <span>package</span></h2>
+        <h2 class="section-title">
+          <span data-i18n="priceTableTitle">choose your</span>
+          <span data-i18n="priceTableTitleSpan">package</span>
+        </h2>
         <div class="container">
           <div class="nav-buttons">
             <button
               id="portfolio-price-btn"
               class="active"
               onclick="showPricing('portfolio-price')"
+              data-i18n="priceBtnPortfolio"
             >
               Portfolio Design
             </button>
             <button
               id="rendering-price-btn"
               onclick="showPricing('rendering-price')"
+              data-i18n="priceBtnRendering"
             >
               3D Visualization
             </button>
             <button
               id="website-price-btn"
               onclick="showPricing('website-price')"
+              data-i18n="priceBtnWebsite"
             >
               Website Design
             </button>
             <button
               id="presentation-price-btn"
               onclick="showPricing('presentation-price')"
+              data-i18n="priceBtnPresentation"
             >
               Presentation
             </button>
@@ -428,31 +435,58 @@
           <div id="portfolio-price" class="pricing-container active">
             <div class="pricing-table">
               <div class="price-card">
-                <div class="price-title">Basic</div>
-                <div class="price">500 SAR</div>
+                <div class="price-title" data-i18n="portfolioBasicPriceTitle">
+                  Basic
+                </div>
+                <div class="price" data-i18n="portfolioPriceBasicSalary">
+                  500 SAR
+                </div>
                 <ul class="features">
-                  <li>4 projects</li>
-                  <li>Simple layout</li>
-                  <li>High-quality PDF</li>
+                  <li data-i18n="portfolioPriceBasicFeture1">4 projects</li>
+                  <li data-i18n="portfolioPriceBasicFeture2">Simple layout</li>
+                  <li data-i18n="portfolioPriceBasicFeture3">
+                    High-quality PDF
+                  </li>
                 </ul>
               </div>
               <div class="price-card standard">
-                <div class="price-title">Standard</div>
-                <div class="price">1,000 SAR</div>
+                <div
+                  class="price-title"
+                  data-i18n="portfolioStandardPriceTitle"
+                >
+                  Standard
+                </div>
+                <div class="price" data-i18n="portfolioPriceStandardSalary">
+                  1,000 SAR
+                </div>
                 <ul class="features">
-                  <li>6 projects</li>
-                  <li>Professional design</li>
-                  <li>One free revision</li>
+                  <li data-i18n="portfolioPriceStandardFeture1">6 projects</li>
+                  <li data-i18n="portfolioPriceStandardFeture2">
+                    Professional design
+                  </li>
+                  <li data-i18n="portfolioPriceStandardFeture3">
+                    One free revision
+                  </li>
                 </ul>
               </div>
               <div class="price-card">
-                <div class="price-title">Premium</div>
-                <div class="price">1,800 SAR</div>
+                <div class="price-title" data-i18n="portfolioPremiumPriceTitle">
+                  Premium
+                </div>
+                <div class="price" data-i18n="portfolioPricePremiumSalary">
+                  1,800 SAR
+                </div>
                 <ul class="features">
-                  <li>8+ projects</li>
-                  <li>Custom design</li>
-                  <li>Two free revisions</li>
-                  <li>Editable files + print-ready PDF</li>
+                  <li data-i18n="portfolioPricePremiumFeture1">8+ projects</li>
+                  <li data-i18n="portfolioPricePremiumFeture2">
+                    Custom design
+                  </li>
+                  <li data-i18n="portfolioPricePremiumFeture3">
+                    Two free revisions
+                  </li>
+                  <li data-i18n="portfolioPricePremiumFeture4">
+                    Editable files + print-ready PDF
+                  </li>
                 </ul>
               </div>
             </div>
@@ -460,30 +494,59 @@
           <div id="rendering-price" class="pricing-container">
             <div class="pricing-table">
               <div class="price-card">
-                <div class="price-title">Basic</div>
-                <div class="price">300 SAR</div>
+                <div class="price-title" data-i18n="renderingBasicPriceTitle">
+                  Basic
+                </div>
+                <div class="price" data-i18n="renderingPriceBasicSalary">
+                  300 SAR
+                </div>
                 <ul class="features">
-                  <li>Medium quality</li>
-                  <li>Basic lighting</li>
-                  <li>Minor adjustments</li>
+                  <li data-i18n="renderingPriceBasicFeture1">Medium quality</li>
+                  <li data-i18n="renderingPriceBasicFeture2">Basic lighting</li>
+                  <li data-i18n="renderingPriceBasicFeture3">
+                    Minor adjustments
+                  </li>
                 </ul>
               </div>
               <div class="price-card standard">
-                <div class="price-title">Standard</div>
-                <div class="price">600 SAR</div>
+                <div
+                  class="price-title"
+                  data-i18n="renderingStandardPriceTitle"
+                >
+                  Standard
+                </div>
+                <div class="price" data-i18n="renderingPriceStandardSalary">
+                  600 SAR
+                </div>
                 <ul class="features">
-                  <li>High quality</li>
-                  <li>Realistic lighting</li>
-                  <li>One free revision</li>
+                  <li data-i18n="renderingPriceStandardFeture1">
+                    High quality
+                  </li>
+                  <li data-i18n="renderingPriceStandardFeture2">
+                    Realistic lighting
+                  </li>
+                  <li data-i18n="renderingPriceStandardFeture3">
+                    One free revision
+                  </li>
                 </ul>
               </div>
               <div class="price-card">
-                <div class="price-title">Premium</div>
-                <div class="price">1,000 SAR</div>
+                <div class="price-title" data-i18n="renderingPremiumPriceTitle">
+                  Premium
+                </div>
+                <div class="price" data-i18n="renderingPricePremiumSalary">
+                  1,000 SAR
+                </div>
                 <ul class="features">
-                  <li>Professional-grade</li>
-                  <li>Full environment</li>
-                  <li>Two free revisions</li>
+                  <li data-i18n="renderingPricePremiumFeture1">
+                    Professional-grade
+                  </li>
+                  <li data-i18n="renderingPricePremiumFeture2">
+                    Full environment
+                  </li>
+                  <li data-i18n="renderingPricePremiumFeture3">
+                    Two free revisions
+                  </li>
                 </ul>
               </div>
             </div>
@@ -491,29 +554,55 @@
           <div id="website-price" class="pricing-container">
             <div class="pricing-table">
               <div class="price-card">
-                <div class="price-title">Basic</div>
-                <div class="price">1,500 SAR</div>
+                <div class="price-title" data-i18n="websiteBasicPriceTitle">
+                  Basic
+                </div>
+                <div class="price" data-i18n="websitePriceBasicSalary">
+                  1,500 SAR
+                </div>
                 <ul class="features">
-                  <li>One-page website</li>
-                  <li>Showcases projects & contact info</li>
+                  <li data-i18n="websitePriceBasicFeture1">One-page website</li>
+                  <li data-i18n="websitePriceBasicFeture2">
+                    Showcases projects & contact info
+                  </li>
                 </ul>
               </div>
               <div class="price-card standard">
-                <div class="price-title">Standard</div>
-                <div class="price">3,000 SAR</div>
+                <div class="price-title" data-i18n="websiteStandardPriceTitle">
+                  Standard
+                </div>
+                <div class="price" data-i18n="websitePriceStandardSalary">
+                  3,000 SAR
+                </div>
                 <ul class="features">
-                  <li>Multi-page website (3-5 pages)</li>
-                  <li>Responsive design</li>
-                  <li>One month free hosting</li>
+                  <li data-i18n="websitePriceStandardFeture1">
+                    Multi-page website (3-5 pages)
+                  </li>
+                  <li data-i18n="websitePriceStandardFeture2">
+                    Responsive design
+                  </li>
+                  <li data-i18n="websitePriceStandardFeture3">
+                    One month free hosting
+                  </li>
                 </ul>
               </div>
               <div class="price-card">
-                <div class="price-title">Premium</div>
-                <div class="price">5,500 SAR</div>
+                <div class="price-title" data-i18n="websitePremiumPriceTitle">
+                  Premium
+                </div>
+                <div class="price" data-i18n="websitePricePremiumSalary">
+                  5,500 SAR
+                </div>
                 <ul class="features">
-                  <li>Fully customized design</li>
-                  <li>Support & updates for one month</li>
-                  <li>Three months free hosting</li>
+                  <li data-i18n="websitePricePremiumFeture1">
+                    Fully customized design
+                  </li>
+                  <li data-i18n="websitePricePremiumFeture2">
+                    Support & updates for one month
+                  </li>
+                  <li data-i18n="websitePricePremiumFeture3">
+                    Three months free hosting
+                  </li>
                 </ul>
               </div>
             </div>
@@ -521,28 +610,61 @@
           <div id="presentation-price" class="pricing-container">
             <div class="pricing-table">
               <div class="price-card">
-                <div class="price-title">Basic</div>
-                <div class="price">200 SAR</div>
+                <div
+                  class="price-title"
+                  data-i18n="presentationBasicPriceTitle"
+                >
+                  Basic
+                </div>
+                <div class="price" data-i18n="presentationPriceBasicSalary">
+                  200 SAR
+                </div>
                 <ul class="features">
-                  <li>5 slides</li>
-                  <li>Simple design</li>
+                  <li data-i18n="presentationPriceBasicFeture1">5 slides</li>
+                  <li data-i18n="presentationPriceBasicFeture2">
+                    Simple design
+                  </li>
                 </ul>
               </div>
               <div class="price-card standard">
-                <div class="price-title">Standard</div>
-                <div class="price">400 SAR</div>
+                <div
+                  class="price-title"
+                  data-i18n="presentationStandardPriceTitle"
+                >
+                  Standard
+                </div>
+                <div class="price" data-i18n="presentationPriceStandardSalary">
+                  400 SAR
+                </div>
                 <ul class="features">
-                  <li>10 slides</li>
-                  <li>Includes graphics and charts</li>
+                  <li data-i18n="presentationPriceStandardFeture1">
+                    10 slides
+                  </li>
+                  <li data-i18n="presentationPriceStandardFeture2">
+                    Includes graphics and charts
+                  </li>
                 </ul>
               </div>
               <div class="price-card">
-                <div class="price-title">Premium</div>
-                <div class="price">700 SAR</div>
+                <div
+                  class="price-title"
+                  data-i18n="presentationPremiumPriceTitle"
+                >
+                  Premium
+                </div>
+                <div class="price" data-i18n="presentationPricePremiumSalary">
+                  700 SAR
+                </div>
                 <ul class="features">
-                  <li>15+ slides</li>
-                  <li>Professional branding</li>
-                  <li>One free revision</li>
+                  <li data-i18n="presentationPricePremiumFeture1">
+                    15+ slides
+                  </li>
+                  <li data-i18n="presentationPricePremiumFeture2">
+                    Professional branding
+                  </li>
+                  <li data-i18n="presentationPricePremiumFeture3">
+                    One free revision
+                  </li>
                 </ul>
               </div>
             </div>
