@@ -187,6 +187,85 @@ const translations = {
     presentation: "عرض معماري",
     website: "موقع ألكتروني",
     // ?------ End Portfolio section ---------------
+    // ?------ Start Price table section ---------------
+    priceTableTitle: "أختر",
+    priceTableTitleSpan: "الباقة",
+    // !price Buttons
+    priceBtnPortfolio: "معرض معماري",
+    priceBtnRendering: "أظهار معماري 3D",
+    priceBtnWebsite: "تصميم المواقع",
+    priceBtnPresentation: "عرض معماري",
+    // !price Card for portfolio Basic ----------------------
+    portfolioBasicPriceTitle: "أساسي",
+    portfolioPriceBasicSalary: "500 ريال",
+    portfolioPriceBasicFeture1: "4 مشاريع",
+    portfolioPriceBasicFeture2: "تصميم بسيط",
+    portfolioPriceBasicFeture3: "PDF عالي الجودة",
+    // !price Card for portfolio Standard
+    portfolioStandardPriceTitle: "قياسي",
+    portfolioPriceStandardSalary: "1,000 ريال",
+    portfolioPriceStandardFeture1: "6 مشاريع",
+    portfolioPriceStandardFeture2: "تصميم احترافي",
+    portfolioPriceStandardFeture3: "مراجعة مجانية واحدة",
+    // !price Card for portfolio Premium
+    portfolioPremiumPriceTitle: "بريميوم",
+    portfolioPricePremiumSalary: "1,800 ريال",
+    portfolioPricePremiumFeture1: "8+ مشاريع",
+    portfolioPricePremiumFeture2: "تصميم مخصص",
+    portfolioPricePremiumFeture3: "مراجعتين مجانيتين",
+    portfolioPricePremiumFeture4: "ملفات قابلة للتعديل + PDF جاهز للطباعة",
+    // !price Card for rendering Basic ----------------------
+    renderingBasicPriceTitle: "أساسي",
+    renderingPriceBasicSalary: "300 ريال",
+    renderingPriceBasicFeture1: "جودة متوسطة",
+    renderingPriceBasicFeture2: "الإضاءة الأساسية",
+    renderingPriceBasicFeture3: "تعديلات طفيفة",
+    // !price Card for rendering Standard
+    renderingStandardPriceTitle: "قياسي",
+    renderingPriceStandardSalary: "600 ريال",
+    renderingPriceStandardFeture1: "جودة عالية",
+    renderingPriceStandardFeture2: "إضاءة واقعية",
+    renderingPriceStandardFeture3: "مراجعة مجانية واحدة",
+    // !price Card for rendering Premium
+    renderingPremiumPriceTitle: "بريميوم",
+    renderingPricePremiumSalary: "1,000 ريال",
+    renderingPricePremiumFeture1: "درجة احترافية",
+    renderingPricePremiumFeture2: "البيئة الكاملة",
+    renderingPricePremiumFeture3: "مراجعتين مجانيتين",
+    // !price Card for website Basic ----------------------
+    websiteBasicPriceTitle: "أساسي",
+    websitePriceBasicSalary: "1,500 ريال",
+    websitePriceBasicFeture1: "موقع ويب من صفحة واحدة",
+    websitePriceBasicFeture2: "يعرض المشاريع ومعلومات الاتصال",
+    // !price Card for website Standard
+    websiteStandardPriceTitle: "قياسي",
+    websitePriceStandardSalary: "3,000 ريال",
+    websitePriceStandardFeture1: "موقع ويب متعدد الصفحات (3-5 صفحات)",
+    websitePriceStandardFeture2: "تصميم متجاوب",
+    websitePriceStandardFeture3: "استضافة مجانية لمدة شهر",
+    // !price Card for website Premium
+    websitePremiumPriceTitle: "بريميوم",
+    websitePricePremiumSalary: "5,500 ريال",
+    websitePricePremiumFeture1: "تصميم مخصص بالكامل",
+    websitePricePremiumFeture2: "الدعم والتحديثات لمدة شهر",
+    websitePricePremiumFeture3: "استضافة مجانية لمدة ثلاثة أشهر",
+    // !price Card for presentation Basic ----------------------
+    presentationBasicPriceTitle: "أساسي",
+    presentationPriceBasicSalary: "200 ريال",
+    presentationPriceBasicFeture2: "تصميم بسيط",
+    presentationPriceBasicFeture1: "5 شرائح",
+    // !price Card for presentation Standard
+    presentationStandardPriceTitle: "قياسي",
+    presentationPriceStandardSalary: "400 ريال",
+    presentationPriceStandardFeture1: "10 شرائح",
+    presentationPriceStandardFeture2: "يتضمن الرسومات البيانية والمخططات",
+    // !price Card for presentation Premium
+    presentationPremiumPriceTitle: "بريميوم",
+    presentationPricePremiumSalary: "700 ريال",
+    presentationPricePremiumFeture1: "15+ شرائح",
+    presentationPricePremiumFeture2: "العلامات التجارية المهنية",
+    presentationPricePremiumFeture3: "مراجعة مجانية واحدة",
+    // ?------ End Price table section ---------------
   },
   // !--------------- End Arabic ---------------------------
 };
