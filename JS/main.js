@@ -202,6 +202,14 @@ function updateSiteText(languageCode) {
     element.textContent =
       translations[languageCode][i18n] || translations.en[i18n];
   });
+  //  for Protfolio button
+  document
+    .querySelectorAll(".portfolio .btn-holder button[data-name]")
+    .forEach((ele) => {
+      const i18n = ele.getAttribute("data-name");
+      ele.textContent =
+        translations[languageCode][i18n] || translations.en[i18n];
+    });
 }
 
 // Function to update site direction (LTR/RTL)
