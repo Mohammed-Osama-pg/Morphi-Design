@@ -1003,11 +1003,13 @@ main .hero .scroall {
   z-index: 5;
   left: -45px;
 }
+.contact .info ul li {
+  margin-inline: 15px;
+}
 .contact .info ul li:first-child {
   font-weight: 700;
 }
 .contact .info ion-icon {
-  margin-left: 26px;
   color: var(--main-color);
   background-color: var(--main-text-color);
   padding: 8px;
