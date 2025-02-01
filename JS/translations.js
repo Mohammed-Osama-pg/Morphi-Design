@@ -139,6 +139,12 @@ const translations = {
     contactEmailLink: "morphi.desighn@gmail.com",
     contactSocialLinks: "Find us on social networks:",
     // ?------ End Contact Us section ---------------
+    // ?------ Start Footer section ---------------
+    footerLinkAboutUs: "About Us",
+    footerLinkServices: "Services",
+    footerLinkOurWrok: "Our Wrok",
+    footerLinkPricing: "Pricing",
+    // ?------ End Footer section ---------------
   },
   // !--------------- End English ---------------------------
   // !--------------- Start Arabic ---------------------------
