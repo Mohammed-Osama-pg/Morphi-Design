@@ -215,6 +215,8 @@ function updateSiteText(languageCode) {
 // Function to update site direction (LTR/RTL)
 function updateSiteDirection(languageCode) {
   const isRTL = rtlLanguages.includes(languageCode);
+  const socialMediaText = document.querySelector(".contact .info .social");
+  const lableText = document.querySelector(".contact .info .lable");
   document.documentElement.setAttribute("dir", isRTL ? "rtl" : "ltr");
   document.documentElement.setAttribute("lang", isRTL ? "ar" : "en");
   document.documentElement.style.setProperty(
@@ -226,8 +228,12 @@ function updateSiteDirection(languageCode) {
   });
   if (document.documentElement.getAttribute("lang") === "ar") {
     carousel.classList.add("arabic");
+    socialMediaText.classList.add("arabic");
+    lableText.classList.add("arabic");
   } else {
     carousel.classList.remove("arabic");
+    socialMediaText.classList.remove("arabic");
+    lableText.classList.remove("arabic");
   }
   check();
 }

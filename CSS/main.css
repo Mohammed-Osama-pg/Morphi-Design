@@ -968,6 +968,10 @@ main .hero .scroall {
   position: relative;
   left: -45px;
 }
+.contact .info .lable.arabic {
+  left: auto;
+  right: -110px;
+}
 .contact .info .link {
   display: block;
   text-decoration: none;
@@ -1002,6 +1006,10 @@ main .hero .scroall {
   position: relative;
   z-index: 5;
   left: -45px;
+}
+.contact .info .social.arabic {
+  left: auto;
+  right: -45px;
 }
 .contact .info ul li {
   margin-inline: 15px;
