@@ -1033,6 +1033,10 @@ main .hero .scroall {
   .contact .info .social {
     left: -10px;
   }
+  .contact .info .link.arabic,
+  .contact .info .social.arabic {
+    right: -10px;
+  }
   .contact .info i {
     margin-left: 10px;
     color: var(--main-color);
@@ -1040,8 +1044,10 @@ main .hero .scroall {
     padding: 8px;
     border-radius: 6px;
   }
-  .contact .info .lable {
-    left: 0;
+  .contact .info .lable,
+  .contact .info .lable.arabic {
+    left: auto;
+    right: auto;
   }
 }
 /* End Contact section */
