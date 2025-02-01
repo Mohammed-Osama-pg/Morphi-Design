@@ -132,6 +132,13 @@ const translations = {
     presentationPricePremiumFeture2: "Professional branding",
     presentationPricePremiumFeture3: "One free revision",
     // ?------ End Price table section ---------------
+    // ?------ Start Contact Us section ---------------
+    contactTitle: "lets",
+    contactTitleSpan: "contact",
+    contactLable: "Feel free to drop us a line at: ",
+    contactEmailLink: "morphi.desighn@gmail.com",
+    contactSocialLinks: "Find us on social networks:",
+    // ?------ End Contact Us section ---------------
   },
   // !--------------- End English ---------------------------
   // !--------------- Start Arabic ---------------------------
@@ -266,6 +273,13 @@ const translations = {
     presentationPricePremiumFeture2: "العلامات التجارية المهنية",
     presentationPricePremiumFeture3: "مراجعة مجانية واحدة",
     // ?------ End Price table section ---------------
+    // ?------ Start Contact Us section ---------------
+    contactTitle: "تواصل",
+    contactTitleSpan: "معنا",
+    contactLable: "لا تتردد في مراسلتنا على: ",
+    contactEmailLink: "morphi.desighn@gmail.com",
+    contactSocialLinks: "أو على شبكات التواصل الاجتماعي:",
+    // ?------ End Contact Us section ---------------
   },
   // !--------------- End Arabic ---------------------------
 };
