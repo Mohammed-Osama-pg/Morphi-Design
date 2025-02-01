@@ -286,6 +286,12 @@ const translations = {
     contactEmailLink: "morphi.desighn@gmail.com",
     contactSocialLinks: "أو على شبكات التواصل الاجتماعي:",
     // ?------ End Contact Us section ---------------
+    // ?------ Start Footer section ---------------
+    footerLinkAboutUs: "من نحن",
+    footerLinkServices: "خدماتنا",
+    footerLinkOurWrok: "أعمالنا",
+    footerLinkPricing: "الاسعار",
+    // ?------ End Footer section ---------------
   },
   // !--------------- End Arabic ---------------------------
 };
