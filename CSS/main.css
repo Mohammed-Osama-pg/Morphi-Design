@@ -158,7 +158,52 @@ section {
 }
 
 /* !-------------------------- End Global Rules------------------- */
-
+/* !-------------------------- Start Preloade page ----------------------- */
+.pre-loade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    0deg,
+    var(--main-color),
+    var(--second-background-color),
+    var(--main-text-color)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.pre-loade.fade-out {
+  animation: fade-out 1s ease-out forwards;
+}
+.pre-loade .column {
+  width: 2vw;
+  height: 12vh;
+  background-color: #fff;
+  border-radius: 1vw;
+  animation: hight-movment 0.8s infinite ease-in-out alternate;
+}
+.pre-loade .column:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.pre-loade .column:nth-child(2),
+.pre-loade .column:nth-child(4) {
+  animation-delay: 0.2s;
+}
+@media (max-width: 767px) {
+  .pre-loade {
+    gap: 20px;
+  }
+  .pre-loade .column {
+    width: 5vw;
+    border-radius: 3vw;
+  }
+}
+/* !-------------------------- End Preloade page -----------------------*/
 /* !-------------------------- Start header -----------------------*/
 .header {
   position: absolute;
@@ -349,7 +394,6 @@ section {
   }
 }
 /* !-------------------------- End header -----------------------*/
-
 /* !-------------------------- Start Hero Section -----------------------*/
 /* ?-------------------------- The background image 1 -------------------- */
 .background-1 {
