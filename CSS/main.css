@@ -380,6 +380,9 @@ header.animation {
     transform: translatex(0);
     background-color: transparent;
   }
+  .header .btn {
+    display: block;
+  }
   .navbar .nav-links {
     display: flex;
     gap: 20px;
