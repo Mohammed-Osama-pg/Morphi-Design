@@ -75,6 +75,7 @@ html {
 }
 body {
   background-color: var(--main-background-color);
+  overflow-x: hidden;
 }
 body.nav-active {
   overflow: hidden;
