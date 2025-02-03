@@ -233,6 +233,7 @@ header.animation {
   animation-play-state: paused;
 }
 .header .btn {
+  display: none;
   position: fixed;
   top: 5vh;
   left: -10vw;
@@ -241,9 +242,8 @@ header.animation {
   transition: var(--main-transtion);
 }
 .header .btn.active {
-  left: 50px;
-  opacity: 1;
-  border-color: var(--main-color);
+  display: block;
+  animation: showCTA 0.7s ease-in-out 1 forwards;
 }
 .nav-open-btn {
   font-size: 2.6rem;
@@ -1269,6 +1269,19 @@ footer .line {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes showCTA {
+  0% {
+    left: 10vw;
+  }
+  10% {
+    display: block;
+  }
+  100% {
+    left: 50px;
+    opacity: 1;
+    border-color: var(--main-color);
   }
 }
 /* !-------------------------- End Animation ----------------------- */
