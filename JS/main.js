@@ -308,7 +308,11 @@ function showPricing(service) {
 // !-- Preload functions ----------------------------------
 // call all animation element
 let preLoade = document.querySelector(".pre-loade");
+let allAnimation = document.querySelectorAll(".animation");
 // Create pre-load fuction
 window.addEventListener("load", () => {
   preLoade.classList.add("fade-out");
+  allAnimation.forEach(function (ele) {
+    ele.style.animationPlayState = "running";
+  });
 });
