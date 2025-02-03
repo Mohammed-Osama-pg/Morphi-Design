@@ -1178,3 +1178,22 @@ footer .line {
   }
 }
 /* !-------------------------- End Footer section ----------------------- */
+/* !-------------------------- Start Animation ----------------------- */
+@keyframes hight-movment {
+  0% {
+    height: 12vh;
+  }
+  100% {
+    height: 3vh;
+  }
+}
+@keyframes fade-out {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+/* !-------------------------- End Animation ----------------------- */
