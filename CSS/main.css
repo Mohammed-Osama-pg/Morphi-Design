@@ -178,7 +178,7 @@ section {
   gap: 40px;
 }
 .pre-loade.fade-out {
-  animation: fade-out 4s ease-in forwards;
+  animation: fade-out 2s ease-in forwards;
 }
 .pre-loade .column {
   width: 2vw;
@@ -213,6 +213,10 @@ section {
   z-index: 1000;
   direction: ltr;
 }
+header.animation {
+  animation: move-to-down 2s ease-in-out forwards;
+  animation-play-state: paused;
+}
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -221,6 +225,11 @@ section {
 .header .logo {
   display: block;
   height: 50px;
+}
+.header .logo.animation {
+  opacity: 0;
+  animation: showup 2s ease-in-out 1 forwards 1s;
+  animation-play-state: paused;
 }
 .header .btn {
   position: fixed;
@@ -273,6 +282,11 @@ section {
   transition: var(--main-transtion);
   z-index: 1;
 }
+.navbar.animation {
+  opacity: 0;
+  animation: showup 2s ease-in-out 1 forwards 1.5s;
+  animation-play-state: paused;
+}
 .navbar.active {
   opacity: 1;
   visibility: visible;
@@ -291,6 +305,11 @@ section {
   position: relative;
   display: inline-block;
   /* display: none; */
+}
+.language-selector.animation {
+  opacity: 0;
+  animation: showup 2s ease-in-out 1 forwards 2s;
+  animation-play-state: paused;
 }
 .lang-btn {
   padding: 5px 25px 5px 10px;
@@ -329,6 +348,11 @@ section {
 }
 .language-selector:hover .lang-dropdown {
   display: block;
+}
+.cta.animation {
+  opacity: 0;
+  animation: showup 2s ease-in-out 1 forwards 2.5s;
+  animation-play-state: paused;
 }
 .header .overlay {
   position: fixed;
@@ -1188,12 +1212,29 @@ footer .line {
   }
 }
 @keyframes fade-out {
-  50% {
+  80% {
     opacity: 0;
   }
   100% {
     opacity: 0;
     display: none;
+  }
+}
+@keyframes showup {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes move-to-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 /* !-------------------------- End Animation ----------------------- */
