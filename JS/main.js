@@ -304,3 +304,11 @@ function showPricing(service) {
     .forEach((el) => el.classList.remove("active"));
   document.getElementById(service + "-btn").classList.add("active");
 }
+
+// !-- Preload functions ----------------------------------
+// call all animation element
+let preLoade = document.querySelector(".pre-loade");
+// Create pre-load fuction
+window.addEventListener("load", () => {
+  preLoade.classList.add("fade-out");
+});

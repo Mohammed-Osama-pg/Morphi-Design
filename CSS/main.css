@@ -178,7 +178,7 @@ section {
   gap: 40px;
 }
 .pre-loade.fade-out {
-  animation: fade-out 1s ease-out forwards;
+  animation: fade-out 4s ease-in forwards;
 }
 .pre-loade .column {
   width: 2vw;
