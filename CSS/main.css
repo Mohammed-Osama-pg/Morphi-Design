@@ -1237,8 +1237,11 @@ footer .line {
   0% {
     transform: translateY(-100%);
   }
-  100% {
+  80% {
     transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
     opacity: 1;
   }
 }

@@ -313,6 +313,15 @@ let allAnimation = document.querySelectorAll(".animation");
 window.addEventListener("load", () => {
   preLoade.classList.add("fade-out");
   allAnimation.forEach(function (ele) {
-    ele.style.animationPlayState = "running";
+    if (window.innerWidth < 768) {
+      const navbar = document.querySelector(".header .navbar");
+      const CTA = document.querySelector(".header .cta");
+      navbar.classList.remove("animation");
+      CTA.classList.remove("animation");
+      allAnimation = document.querySelectorAll(".animation");
+      ele.style.animationPlayState = "running";
+    } else {
+      ele.style.animationPlayState = "running";
+    }
   });
 });
