@@ -157,7 +157,9 @@ section {
 .btn-third.active {
   background-color: var(--main-color);
 }
-
+.scroll-animation {
+  animation: scroallAnimation 1.5s ease-in-out forwards;
+}
 /* !-------------------------- End Global Rules------------------- */
 /* !-------------------------- Start Preloade page ----------------------- */
 .pre-loade {
@@ -1285,6 +1287,33 @@ footer .line {
     left: 50px;
     opacity: 1;
     border-color: var(--main-color);
+  }
+}
+@keyframes scroallAnimationShowUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scroallAnimationLeftRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scroallAnimationRightLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
   }
 }
 /* !-------------------------- End Animation ----------------------- */
