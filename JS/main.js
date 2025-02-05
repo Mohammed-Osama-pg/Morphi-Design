@@ -324,3 +324,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedLanguage = localStorage.getItem("selectedLanguage") || "en"; // Default to English
   setLanguage(savedLanguage);
 });
+
+// !-- Scroll Animation ----------------------------------------
+
+// *Select all sections
+const allscroallAnimationElements = document.querySelectorAll(
+  ".scroallAnimationShowUp"
+);
+
+window.onscroll = function () {
+  allscroallAnimationElements.forEach((ele) => {
+    if (
+      window.scrollY >=
+      ele.offsetTop + ele.offsetHeight - window.innerHeight
+    ) {
+      ele.classList.add("active");
+    } else {
+      ele.classList.remove("active");
+    }
+  });
+};
