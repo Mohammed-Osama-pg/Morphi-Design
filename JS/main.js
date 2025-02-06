@@ -327,47 +327,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // !-- Scroll Animation ----------------------------------------
 
-// *Select all animation class
-const allScroallAnimationShowUp = document.querySelectorAll(
-  ".scroallAnimationShowUp"
-);
-const allScroallAnimationLeftRight = document.querySelectorAll(
-  ".scroallAnimationLeftRight"
-);
-const allScroallAnimationRightLeft = document.querySelectorAll(
-  ".scroallAnimationRightLeft"
-);
-
+// *select all sections
+const aboutUsSection = document.getElementById("about-us");
+const servicesSection = document.getElementById("services");
+const portfolioSection = document.getElementById("portfolio");
+const priceTableSection = document.getElementById("price-table");
+const contactUsSection = document.getElementById("contact-us");
+const allSections = [
+  aboutUsSection,
+  servicesSection,
+  portfolioSection,
+  priceTableSection,
+  contactUsSection,
+];
 // *scroll function
 window.onscroll = function () {
-  allScroallAnimationShowUp.forEach((ele) => {
-    if (
-      window.scrollY >=
-      ele.offsetTop + ele.offsetHeight - window.innerHeight
-    ) {
-      ele.classList.add("active");
-    } else {
-      ele.classList.remove("active");
-    }
-  });
-  allScroallAnimationLeftRight.forEach((ele) => {
-    if (
-      window.scrollY >=
-      ele.offsetTop + ele.offsetHeight - window.innerHeight
-    ) {
-      ele.classList.add("active");
-    } else {
-      ele.classList.remove("active");
-    }
-  });
-  allScroallAnimationRightLeft.forEach((ele) => {
-    if (
-      window.scrollY >=
-      ele.offsetTop + ele.offsetHeight - window.innerHeight
-    ) {
-      ele.classList.add("active");
-    } else {
-      ele.classList.remove("active");
-    }
+  allSections.forEach((section) => {
+    // *Select all animation class
+    let allScroallAnimationShowUp = section.querySelectorAll(
+      ".scroallAnimationShowUp"
+    );
+    let allScroallAnimationLeftRight = section.querySelectorAll(
+      ".scroallAnimationLeftRight"
+    );
+    let allScroallAnimationRightLeft = section.querySelectorAll(
+      ".scroallAnimationRightLeft"
+    );
+
+    allScroallAnimationShowUp.forEach((ele) => {
+      if (
+        window.scrollY >=
+        section.offsetTop + section.offsetHeight - window.innerHeight
+      ) {
+        ele.classList.add("active");
+      } else {
+        ele.classList.remove("active");
+      }
+    });
+    allScroallAnimationLeftRight.forEach((ele) => {
+      if (
+        window.scrollY >=
+        section.offsetTop + section.offsetHeight - window.innerHeight * 2
+      ) {
+        ele.classList.add("active");
+      } else {
+        ele.classList.remove("active");
+      }
+    });
+    allScroallAnimationRightLeft.forEach((ele) => {
+      if (
+        window.scrollY >=
+        section.offsetTop + section.offsetHeight - window.innerHeight
+      ) {
+        ele.classList.add("active");
+      } else {
+        ele.classList.remove("active");
+      }
+    });
   });
 };
