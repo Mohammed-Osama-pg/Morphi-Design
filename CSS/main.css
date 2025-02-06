@@ -157,17 +157,6 @@ section {
 .btn-third.active {
   background-color: var(--main-color);
 }
-.scroallAnimationShowUp {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(-100%);
-  transition: ease-in-out 2s;
-}
-.scroallAnimationShowUp.active {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
 /* !-------------------------- End Global Rules------------------- */
 /* !-------------------------- Start Preloade page ----------------------- */
 .pre-loade {
@@ -1297,31 +1286,37 @@ footer .line {
     border-color: var(--main-color);
   }
 }
-@keyframes scroallAnimationShowUp {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-  }
+.scroallAnimationShowUp {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: ease-in-out 2s;
 }
-@keyframes scroallAnimationLeftRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100% {
-    opacity: 1;
-  }
+.scroallAnimationShowUp.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
-@keyframes scroallAnimationRightLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-  }
+.scroallAnimationLeftRight {
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: ease-in-out 2s;
+}
+.scroallAnimationLeftRight.active {
+  filter: blur(0);
+  opacity: 1;
+  transform: translateX(0);
+}
+.scroallAnimationRightLeft {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: ease-in-out 2s;
+}
+.scroallAnimationRightLeft.active {
+  filter: blur(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 /* !-------------------------- End Animation ----------------------- */
