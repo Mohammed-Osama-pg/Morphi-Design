@@ -353,7 +353,7 @@ window.onscroll = function () {
     let allScroallAnimationRightLeft = section.querySelectorAll(
       ".scroallAnimationRightLeft"
     );
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 767) {
       allScroallAnimationShowUp.forEach((ele) => {
         if (
           window.scrollY >=

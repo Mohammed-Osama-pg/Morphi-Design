@@ -844,6 +844,7 @@ main .hero .scroall {
   cursor: pointer;
   position: absolute;
   top: 50%;
+  z-index: 500;
   transform: translateY(-50%);
 }
 .portfolio .wrapper ion-icon:first-child {
