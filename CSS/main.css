@@ -1289,7 +1289,7 @@ footer .line {
 .scroallAnimationShowUp {
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(-300px);
+  transform: translateY(-100%);
   transition: ease-in-out 1s;
 }
 .scroallAnimationShowUp.active {
@@ -1300,7 +1300,7 @@ footer .line {
 .scroallAnimationLeftRight {
   filter: blur(5px);
   opacity: 0;
-  transform: translateX(-300px);
+  transform: translateX(-100%);
   transition: ease-in-out 1s;
 }
 .scroallAnimationLeftRight.active {
@@ -1311,7 +1311,7 @@ footer .line {
 .scroallAnimationRightLeft {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(300px);
+  transform: translateX(100%);
   transition: ease-in-out 1s;
 }
 .scroallAnimationRightLeft.active {
