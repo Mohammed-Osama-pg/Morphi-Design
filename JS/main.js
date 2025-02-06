@@ -327,13 +327,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // !-- Scroll Animation ----------------------------------------
 
-// *Select all sections
-const allscroallAnimationElements = document.querySelectorAll(
+// *Select all animation class
+const allScroallAnimationShowUp = document.querySelectorAll(
   ".scroallAnimationShowUp"
 );
+const allScroallAnimationLeftRight = document.querySelectorAll(
+  ".scroallAnimationLeftRight"
+);
+const allScroallAnimationRightLeft = document.querySelectorAll(
+  ".scroallAnimationRightLeft"
+);
 
+// *scroll function
 window.onscroll = function () {
-  allscroallAnimationElements.forEach((ele) => {
+  allScroallAnimationShowUp.forEach((ele) => {
+    if (
+      window.scrollY >=
+      ele.offsetTop + ele.offsetHeight - window.innerHeight
+    ) {
+      ele.classList.add("active");
+    } else {
+      ele.classList.remove("active");
+    }
+  });
+  allScroallAnimationLeftRight.forEach((ele) => {
+    if (
+      window.scrollY >=
+      ele.offsetTop + ele.offsetHeight - window.innerHeight
+    ) {
+      ele.classList.add("active");
+    } else {
+      ele.classList.remove("active");
+    }
+  });
+  allScroallAnimationRightLeft.forEach((ele) => {
     if (
       window.scrollY >=
       ele.offsetTop + ele.offsetHeight - window.innerHeight
