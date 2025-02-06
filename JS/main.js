@@ -353,35 +353,50 @@ window.onscroll = function () {
     let allScroallAnimationRightLeft = section.querySelectorAll(
       ".scroallAnimationRightLeft"
     );
-    allScroallAnimationShowUp.forEach((ele) => {
-      if (
-        window.scrollY >=
-        section.offsetTop + section.offsetHeight - window.innerHeight
-      ) {
-        ele.classList.add("active");
-      } else {
-        ele.classList.remove("active");
-      }
-    });
-    allScroallAnimationLeftRight.forEach((ele) => {
-      if (
-        window.scrollY >=
-        section.offsetTop + section.offsetHeight / 2 - window.innerHeight
-      ) {
-        ele.classList.add("active");
-      } else {
-        ele.classList.remove("active");
-      }
-    });
-    allScroallAnimationRightLeft.forEach((ele) => {
-      if (
-        window.scrollY >=
-        section.offsetTop + section.offsetHeight / 2 - window.innerHeight
-      ) {
-        ele.classList.add("active");
-      } else {
-        ele.classList.remove("active");
-      }
-    });
+    if (window.innerWidth > 768) {
+      allScroallAnimationShowUp.forEach((ele) => {
+        if (
+          window.scrollY >=
+          section.offsetTop + section.offsetHeight - window.innerHeight
+        ) {
+          ele.classList.add("active");
+        }
+      });
+      allScroallAnimationLeftRight.forEach((ele) => {
+        if (
+          window.scrollY >=
+          section.offsetTop + section.offsetHeight / 2 - window.innerHeight
+        ) {
+          ele.classList.add("active");
+        }
+      });
+      allScroallAnimationRightLeft.forEach((ele) => {
+        if (
+          window.scrollY >=
+          section.offsetTop + section.offsetHeight / 2 - window.innerHeight
+        ) {
+          ele.classList.add("active");
+        }
+      });
+    } else {
+      let allScroallAnimationShowUp = document.querySelectorAll(
+        ".scroallAnimationShowUp"
+      );
+      let allScroallAnimationLeftRight = document.querySelectorAll(
+        ".scroallAnimationLeftRight"
+      );
+      let allScroallAnimationRightLeft = document.querySelectorAll(
+        ".scroallAnimationRightLeft"
+      );
+      allScroallAnimationShowUp.forEach((el) => {
+        el.classList.remove("scroallAnimationShowUp");
+      });
+      allScroallAnimationLeftRight.forEach((el) => {
+        el.classList.remove("scroallAnimationLeftRight");
+      });
+      allScroallAnimationRightLeft.forEach((el) => {
+        el.classList.remove("scroallAnimationRightLeft");
+      });
+    }
   });
 };
