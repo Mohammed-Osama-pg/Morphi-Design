@@ -1290,7 +1290,7 @@ footer .line {
   opacity: 0;
   filter: blur(5px);
   transform: translateY(-300px);
-  transition: ease-in-out 2s;
+  transition: ease-in-out 1s;
 }
 .scroallAnimationShowUp.active {
   opacity: 1;
@@ -1301,7 +1301,7 @@ footer .line {
   filter: blur(5px);
   opacity: 0;
   transform: translateX(-300px);
-  transition: ease-in-out 2s;
+  transition: ease-in-out 1s;
 }
 .scroallAnimationLeftRight.active {
   filter: blur(0);
@@ -1312,7 +1312,7 @@ footer .line {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(300px);
-  transition: ease-in-out 2s;
+  transition: ease-in-out 1s;
 }
 .scroallAnimationRightLeft.active {
   filter: blur(0);

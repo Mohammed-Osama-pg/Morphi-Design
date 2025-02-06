@@ -353,7 +353,6 @@ window.onscroll = function () {
     let allScroallAnimationRightLeft = section.querySelectorAll(
       ".scroallAnimationRightLeft"
     );
-
     allScroallAnimationShowUp.forEach((ele) => {
       if (
         window.scrollY >=
@@ -367,7 +366,7 @@ window.onscroll = function () {
     allScroallAnimationLeftRight.forEach((ele) => {
       if (
         window.scrollY >=
-        section.offsetTop + section.offsetHeight - window.innerHeight * 2
+        section.offsetTop + section.offsetHeight / 2 - window.innerHeight
       ) {
         ele.classList.add("active");
       } else {
@@ -377,7 +376,7 @@ window.onscroll = function () {
     allScroallAnimationRightLeft.forEach((ele) => {
       if (
         window.scrollY >=
-        section.offsetTop + section.offsetHeight - window.innerHeight
+        section.offsetTop + section.offsetHeight / 2 - window.innerHeight
       ) {
         ele.classList.add("active");
       } else {
